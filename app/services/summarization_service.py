@@ -69,6 +69,7 @@ def summarize_text(text: str, mode: str = "executive") -> dict:
         "conclusion": conclusion,
     }
 
+
 def answer_question_from_chunks(question: str, chunks: list[dict]) -> dict:
     if not chunks:
         return {
@@ -77,19 +78,50 @@ def answer_question_from_chunks(question: str, chunks: list[dict]) -> dict:
             "evidence": [],
         }
 
-    top_chunk = chunks[0]
-    answer = top_chunk["text"][:700].strip()
+    ordered_text = []
+    seen = set()
+
+    for chunk in chunks:
+        text = chunk.get("text", "").strip()
+        if text and text not in seen:
+            ordered_text.append(text)
+            seen.add(text)
+
+    combined = " ".join(ordered_text)
+
+    abstract = extract_section(combined, "abstract")
+    methods = extract_section(combined, "methods")
+    results = extract_section(combined, "results")
+    limitations = extract_section(combined, "limitations")
+    conclusion = extract_section(combined, "conclusion")
+
+    lower_q = question.lower()
+
+    if "method" in lower_q:
+        answer = methods or abstract or combined[:900]
+    elif "result" in lower_q or "find" in lower_q:
+        answer = results or abstract or combined[:900]
+    elif "limitation" in lower_q or "weakness" in lower_q:
+        answer = limitations or combined[:900]
+    elif "conclusion" in lower_q or "conclude" in lower_q:
+        answer = conclusion or results or combined[:900]
+    elif "what is this paper about" in lower_q or "summary" in lower_q or "about" in lower_q:
+        answer_parts = [part for part in [abstract, methods, results, conclusion] if part]
+        answer = " ".join(answer_parts)[:1200] if answer_parts else combined[:1200]
+    else:
+        answer_parts = [part for part in [abstract, methods, results, limitations, conclusion] if part]
+        answer = " ".join(answer_parts)[:1200] if answer_parts else combined[:1200]
 
     return {
         "question": question,
-        "answer": answer,
+        "answer": answer.strip(),
         "evidence": [
             {
                 "document_id": c["document_id"],
                 "chunk_id": c["chunk_id"],
                 "section_guess": c["section_guess"],
                 "score": c["score"],
-                "text": c["text"][:400].strip(),
+                "text": c["text"][:500].strip(),
             }
             for c in chunks
         ],
