@@ -16,6 +16,7 @@ router = APIRouter()
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
 CATALOG_PATH = PROCESSED_DIR / "paper_catalog.csv"
+SUMMARY_PATH = PROCESSED_DIR / "document_summaries.csv"
 
 
 def load_catalog() -> pd.DataFrame:
@@ -24,12 +25,30 @@ def load_catalog() -> pd.DataFrame:
     return pd.read_csv(CATALOG_PATH)
 
 
-def clean_for_json(df: pd.DataFrame) -> pd.DataFrame:
+def load_summaries() -> pd.DataFrame:
+    if not SUMMARY_PATH.exists():
+        return pd.DataFrame()
+    return pd.read_csv(SUMMARY_PATH)
+
+
+def clean_for_json_df(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
     df = df.replace([np.inf, -np.inf], np.nan)
     df = df.astype(object)
     df = df.where(pd.notnull(df), None)
     return df
+
+
+def clean_for_json_dict(d: dict) -> dict:
+    cleaned = {}
+    for k, v in d.items():
+        if isinstance(v, float) and (np.isnan(v) or np.isinf(v)):
+            cleaned[k] = None
+        elif pd.isna(v) if not isinstance(v, (list, dict, str, bool, int)) else False:
+            cleaned[k] = None
+        else:
+            cleaned[k] = v
+    return cleaned
 
 
 @router.get("/health")
@@ -43,13 +62,13 @@ def get_catalog(limit: int = 50):
     if df.empty:
         return []
 
-    df = clean_for_json(df.head(limit))
+    df = clean_for_json_df(df.head(limit))
     return jsonable_encoder(df.to_dict(orient="records"))
 
 
 @router.get("/search")
 def search_catalog(
-    q: str = Query(..., description="Search papers by title or topic"),
+    q: str = Query(..., description="Search papers by title, topic, author, or institution"),
     limit: int = 25
 ):
     df = load_catalog()
@@ -67,22 +86,57 @@ def search_catalog(
     )
 
     results = df.loc[mask].head(limit)
-    results = clean_for_json(results)
+    results = clean_for_json_df(results)
     return jsonable_encoder(results.to_dict(orient="records"))
 
 
 @router.get("/paper/{work_id}")
 def get_paper_detail(work_id: str):
-    df = load_catalog()
-    if df.empty:
+    catalog = load_catalog()
+    summaries = load_summaries()
+
+    if catalog.empty:
         return {"message": "Catalog not available."}
 
-    row = df.loc[df["work_id"] == work_id]
+    row = catalog.loc[catalog["work_id"] == work_id]
     if row.empty:
         return {"message": f"Paper {work_id} not found."}
 
-    row = clean_for_json(row)
-    return jsonable_encoder(row.iloc[0].to_dict())
+    row_dict = clean_for_json_dict(row.iloc[0].to_dict())
+    document_id = row_dict.get("document_id")
+
+    ai_summary = None
+    if document_id and not summaries.empty:
+        s = summaries.loc[summaries["document_id"] == document_id]
+        if not s.empty:
+            ai_summary = clean_for_json_dict(s.iloc[0].to_dict())
+
+    response = {
+        "metadata": clean_for_json_dict({
+            "work_id": row_dict.get("work_id"),
+            "document_id": row_dict.get("document_id"),
+            "title": row_dict.get("title"),
+            "author": row_dict.get("display_author"),
+            "institution": row_dict.get("display_institution"),
+            "topic": row_dict.get("display_topic"),
+            "primary_topic": row_dict.get("primary_topic"),
+            "citation": row_dict.get("display_citation"),
+            "publication_year": row_dict.get("publication_year"),
+            "cited_by_count": row_dict.get("cited_by_count"),
+            "source_system": row_dict.get("source_system"),
+            "source_paper_id": row_dict.get("source_paper_id"),
+            "published": row_dict.get("published"),
+            "updated": row_dict.get("updated"),
+            "pdf_url": row_dict.get("pdf_url"),
+            "entry_url": row_dict.get("entry_url"),
+            "categories": row_dict.get("categories"),
+            "availability_label": row_dict.get("availability_label"),
+            "has_full_document": row_dict.get("has_full_document"),
+        }),
+        "ai_summary": ai_summary,
+    }
+
+    return jsonable_encoder(response)
 
 
 @router.get("/arxiv-search")

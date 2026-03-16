@@ -38,6 +38,7 @@ def home():
                 background: #0f172a;
                 position: sticky;
                 top: 0;
+                z-index: 10;
             }
             .brand {
                 font-size: 1.2rem;
@@ -52,7 +53,7 @@ def home():
                 display: grid;
                 grid-template-columns: 320px 1fr;
                 gap: 24px;
-                max-width: 1400px;
+                max-width: 1450px;
                 margin: 24px auto;
                 padding: 0 24px 24px 24px;
             }
@@ -63,7 +64,7 @@ def home():
                 padding: 24px;
                 box-shadow: 0 12px 30px rgba(0,0,0,0.25);
             }
-            .sidebar h2, .mainpanel h1, .mainpanel h2 {
+            .sidebar h2, .mainpanel h1, .mainpanel h2, .mainpanel h3 {
                 color: #22d3ee;
                 margin-top: 0;
             }
@@ -95,7 +96,7 @@ def home():
                 resize: vertical;
             }
             button {
-                margin-top: 16px;
+                margin-top: 12px;
                 background: #22d3ee;
                 color: #0f172a;
                 font-weight: bold;
@@ -115,7 +116,7 @@ def home():
             .sample-btn:hover {
                 background: #334155;
             }
-            .result, .doccard {
+            .panel, .doccard {
                 margin-top: 24px;
                 padding: 20px;
                 background: #020617;
@@ -155,6 +156,23 @@ def home():
                 border-radius: 10px;
                 border: 1px solid #1f2937;
             }
+            .summary-section {
+                margin-top: 18px;
+                padding: 14px;
+                background: #0b1220;
+                border: 1px solid #334155;
+                border-radius: 10px;
+            }
+            .summary-section h3 {
+                margin-bottom: 8px;
+            }
+            .link {
+                color: #67e8f9;
+                word-break: break-all;
+            }
+            .success {
+                color: #86efac;
+            }
             @media (max-width: 980px) {
                 .layout {
                     grid-template-columns: 1fr;
@@ -165,75 +183,114 @@ def home():
     <body>
         <div class="navbar">
             <div class="brand">Frontier Research Intelligence Platform</div>
-            <div class="navlinks">Educational Research Explorer • Grounded Q&A • Scientific Discovery</div>
+            <div class="navlinks">Educational Research Explorer • AI Summaries • Scientific Discovery</div>
         </div>
 
         <div class="layout">
             <div class="sidebar">
                 <h2>How to Use This Tool</h2>
                 <p>
-                    This application helps students and researchers explore research papers,
-                    understand what they are about, and ask grounded questions based on source content.
+                    Search papers by title, topic, author, or institution. All papers are searchable from metadata.
+                    Some papers also have full document intelligence, including AI summaries and grounded Q&A.
                 </p>
                 <p>
-                    Start by searching for a paper by title, topic, author, or institution.
-                    If a full document is available, you can open it and ask questions about its
-                    methods, results, limitations, or overall purpose.
+                    You can also search arXiv and ingest new papers directly into the platform.
                 </p>
 
                 <h2>Sample Questions</h2>
-                <button class="sample-btn" onclick="setQuestion('What methods does the graph learning paper use?')">
-                    What methods does the graph learning paper use?
-                </button>
-                <button class="sample-btn" onclick="setQuestion('What are the limitations of this paper?')">
-                    What are the limitations of this paper?
-                </button>
-                <button class="sample-btn" onclick="setQuestion('What does this paper conclude?')">
-                    What does this paper conclude?
-                </button>
+                <button class="sample-btn" onclick="setQuestion('What is this paper about?')">What is this paper about?</button>
+                <button class="sample-btn" onclick="setQuestion('What methods does this paper use?')">What methods does this paper use?</button>
+                <button class="sample-btn" onclick="setQuestion('What are the main findings?')">What are the main findings?</button>
+                <button class="sample-btn" onclick="setQuestion('How could this paper be used in practice?')">How could this paper be used in practice?</button>
             </div>
 
             <div class="mainpanel">
-                <h1>Ask Questions About Research Documents</h1>
+                <h1>Search and Explore Research Papers</h1>
                 <p>
-                    Search papers across the platform. All papers are searchable from metadata,
-                    but only some have full document intelligence available for summaries and Q&A.
+                    Search your platform catalog or ingest new open-access research from arXiv.
                 </p>
 
-                <label for="paperSearch">Search papers by title, topic, author, or institution</label>
-                <input id="paperSearch" type="text" placeholder="Example: artificial intelligence" />
+                <label for="paperSearch">Search platform papers</label>
+                <input id="paperSearch" type="text" placeholder="Example: graph learning" />
                 <button onclick="searchPapers()">Search Papers</button>
 
-                <div class="result" id="searchResults" style="display:none;">
+                <div class="panel" id="searchResults" style="display:none;">
                     <h2>Search Results</h2>
                     <div id="searchResultsContent"></div>
                 </div>
 
-                <label for="documentSelect">Select a document</label>
-                <select id="documentSelect" onchange="loadDocumentSummary()">
-                    <option value="">Loading documents...</option>
-                </select>
+                <label for="arxivSearch">Search arXiv</label>
+                <input id="arxivSearch" type="text" placeholder="Example: graph neural networks" />
+                <button onclick="searchArxiv()">Search arXiv</button>
 
-                <div class="doccard" id="doccard" style="display:none;">
-                    <h2 id="docTitle"></h2>
+                <div class="panel" id="arxivResults" style="display:none;">
+                    <h2>arXiv Results</h2>
+                    <div id="arxivResultsContent"></div>
+                </div>
+
+                <div class="doccard" id="paperCard" style="display:none;">
+                    <h2 id="paperTitle"></h2>
+
                     <div class="docmeta">
-                        <div><strong>Author</strong><br><span id="docAuthor"></span></div>
-                        <div><strong>Institution</strong><br><span id="docInstitution"></span></div>
-                        <div><strong>Topic</strong><br><span id="docTopic"></span></div>
-                        <div><strong>Citation</strong><br><span id="docCitation"></span></div>
+                        <div><strong>Author</strong><br><span id="paperAuthor"></span></div>
+                        <div><strong>Institution</strong><br><span id="paperInstitution"></span></div>
+                        <div><strong>Topic</strong><br><span id="paperTopic"></span></div>
+                        <div><strong>Citation</strong><br><span id="paperCitation"></span></div>
+                        <div><strong>Published</strong><br><span id="paperPublished"></span></div>
+                        <div><strong>Source</strong><br><span id="paperSource"></span></div>
                     </div>
-                    <div style="margin-top:16px;">
-                        <strong>Executive Summary</strong>
-                        <p id="docSummary"></p>
+
+                    <div class="summary-section">
+                        <h3>Plain English Summary</h3>
+                        <p id="plainEnglishSummary"></p>
+                    </div>
+
+                    <div class="summary-section">
+                        <h3>Academic Summary</h3>
+                        <p id="academicSummary"></p>
+                    </div>
+
+                    <div class="summary-section">
+                        <h3>Methods</h3>
+                        <p id="methodsSummary"></p>
+                    </div>
+
+                    <div class="summary-section">
+                        <h3>Results</h3>
+                        <p id="resultsSummary"></p>
+                    </div>
+
+                    <div class="summary-section">
+                        <h3>Limitations</h3>
+                        <p id="limitationsSummary"></p>
+                    </div>
+
+                    <div class="summary-section">
+                        <h3>Practical Applications</h3>
+                        <p id="practicalApplications"></p>
+                    </div>
+
+                    <div class="summary-section">
+                        <h3>Suggested Topics</h3>
+                        <p id="suggestedTopics"></p>
+                    </div>
+
+                    <div class="summary-section">
+                        <h3>Citation Guidance</h3>
+                        <p id="citationGuidance"></p>
+                    </div>
+
+                    <div class="summary-section">
+                        <h3>PDF / Source Link</h3>
+                        <p><a id="paperPdfUrl" class="link" href="#" target="_blank"></a></p>
                     </div>
                 </div>
 
-                <label for="question">Ask a question</label>
+                <label for="question">Ask a question about the selected document</label>
                 <textarea id="question" placeholder="Example: What methods does this paper use?"></textarea>
-
                 <button onclick="askQuestion()">Ask</button>
 
-                <div class="result" id="result" style="display:none;">
+                <div class="panel" id="qaPanel" style="display:none;">
                     <h2>Answer</h2>
                     <div id="answer"></div>
                     <div class="evidence" id="evidence"></div>
@@ -242,46 +299,8 @@ def home():
         </div>
 
         <script>
-            async function loadDocuments() {
-                const select = document.getElementById("documentSelect");
-                const response = await fetch("/documents/list");
-                const docs = await response.json();
-
-                select.innerHTML = '<option value="">Choose a document</option>';
-                docs.forEach(doc => {
-                    const option = document.createElement("option");
-                    option.value = doc.document_id;
-                    option.textContent = `${doc.document_id} — ${doc.title}`;
-                    select.appendChild(option);
-                });
-
-                if (docs.length > 0) {
-                    select.value = docs[0].document_id;
-                    loadDocumentSummary();
-                }
-            }
-
-            async function loadDocumentSummary() {
-                const documentId = document.getElementById("documentSelect").value;
-                const card = document.getElementById("doccard");
-
-                if (!documentId) {
-                    card.style.display = "none";
-                    return;
-                }
-
-                const response = await fetch(`/documents/${documentId}/summary`);
-                const data = await response.json();
-
-                document.getElementById("docTitle").textContent = data.title || "Untitled";
-                document.getElementById("docAuthor").textContent = data.author || "Unknown";
-                document.getElementById("docInstitution").textContent = data.institution || "Unknown";
-                document.getElementById("docTopic").textContent = data.topic || "Unknown";
-                document.getElementById("docCitation").textContent = data.citation || "No citation available";
-                document.getElementById("docSummary").textContent = data.executive_summary || "No summary available.";
-
-                card.style.display = "block";
-            }
+            let currentDocumentId = null;
+            let currentWorkId = null;
 
             function setQuestion(text) {
                 document.getElementById("question").value = text;
@@ -297,8 +316,8 @@ def home():
                     return;
                 }
 
-                resultsContent.innerHTML = "Loading...";
                 resultsBox.style.display = "block";
+                resultsContent.innerHTML = "Loading...";
 
                 try {
                     const response = await fetch(`/research/search?q=${encodeURIComponent(query)}&limit=20`);
@@ -316,16 +335,14 @@ def home():
                         card.className = "evidence-item";
                         card.innerHTML = `
                             <div class="meta">
-                                ${item.availability_label} | Year: ${item.publication_year || "Unknown"} | Citations: ${item.cited_by_count || 0}
+                                ${item.availability_label || "Unknown"} | Year: ${item.publication_year || "Unknown"} | Citations: ${item.cited_by_count || 0}
                             </div>
                             <div><strong>${item.title || "Untitled"}</strong></div>
                             <div class="small">Topic: ${item.display_topic || item.primary_topic || "Unknown"}</div>
                             <div class="small">Author: ${item.display_author || "Unknown"}</div>
                             <div class="small">Institution: ${item.display_institution || "Unknown"}</div>
                             <div style="margin-top:8px;">
-                                <button onclick="selectPaperFromSearch('${item.document_id || ""}', '${item.title ? item.title.replace(/'/g, "\\'") : ""}')">
-                                    ${item.has_full_document === 1 ? "Open Document Mode" : "Metadata Only"}
-                                </button>
+                                <button onclick="openPaper('${item.work_id}')">Open Paper</button>
                             </div>
                         `;
                         resultsContent.appendChild(card);
@@ -335,33 +352,138 @@ def home():
                 }
             }
 
-            function selectPaperFromSearch(documentId, title) {
-                if (documentId) {
-                    const select = document.getElementById("documentSelect");
-                    select.value = documentId;
-                    loadDocumentSummary();
-                    document.getElementById("question").value = "What is this paper about?";
-                    window.scrollTo({ top: 0, behavior: "smooth" });
+            async function openPaper(workId) {
+                currentWorkId = workId;
+
+                const response = await fetch(`/research/paper/${workId}`);
+                const data = await response.json();
+
+                if (data.message || data.error) {
+                    alert(data.message || data.error);
+                    return;
+                }
+
+                const meta = data.metadata || {};
+                const ai = data.ai_summary || {};
+
+                currentDocumentId = meta.document_id || null;
+
+                document.getElementById("paperTitle").textContent = meta.title || "Untitled";
+                document.getElementById("paperAuthor").textContent = meta.author || "Unknown";
+                document.getElementById("paperInstitution").textContent = meta.institution || "Unknown";
+                document.getElementById("paperTopic").textContent = meta.topic || meta.primary_topic || "Unknown";
+                document.getElementById("paperCitation").textContent = meta.citation || "No citation available";
+                document.getElementById("paperPublished").textContent = meta.published || meta.publication_year || "Unknown";
+                document.getElementById("paperSource").textContent = meta.source_system || "Unknown";
+
+                document.getElementById("plainEnglishSummary").textContent = ai.plain_english_summary || ai.executive_summary || "No AI summary available.";
+                document.getElementById("academicSummary").textContent = ai.academic_summary || ai.technical_summary || "No academic summary available.";
+                document.getElementById("methodsSummary").textContent = ai.methods_summary || "Not available.";
+                document.getElementById("resultsSummary").textContent = ai.results_summary || "Not available.";
+                document.getElementById("limitationsSummary").textContent = ai.limitations_summary || "Not available.";
+                document.getElementById("practicalApplications").textContent = ai.practical_applications || "Not available.";
+                document.getElementById("suggestedTopics").textContent = ai.suggested_topics || "Not available.";
+                document.getElementById("citationGuidance").textContent = ai.citation_guidance || "Not available.";
+
+                const pdfUrlEl = document.getElementById("paperPdfUrl");
+                if (meta.pdf_url) {
+                    pdfUrlEl.href = meta.pdf_url;
+                    pdfUrlEl.textContent = meta.pdf_url;
+                } else if (meta.entry_url) {
+                    pdfUrlEl.href = meta.entry_url;
+                    pdfUrlEl.textContent = meta.entry_url;
                 } else {
-                    alert(`"${title}" is currently metadata-only. Full document Q&A is not available yet.`);
+                    pdfUrlEl.href = "#";
+                    pdfUrlEl.textContent = "No external source link available";
+                }
+
+                document.getElementById("paperCard").style.display = "block";
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+
+            async function searchArxiv() {
+                const query = document.getElementById("arxivSearch").value.trim();
+                const resultsBox = document.getElementById("arxivResults");
+                const resultsContent = document.getElementById("arxivResultsContent");
+
+                if (!query) {
+                    alert("Please enter an arXiv search term.");
+                    return;
+                }
+
+                resultsBox.style.display = "block";
+                resultsContent.innerHTML = "Loading...";
+
+                try {
+                    const response = await fetch(`/research/arxiv-search?q=${encodeURIComponent(query)}&limit=10`);
+                    const data = await response.json();
+
+                    if (!data || data.length === 0) {
+                        resultsContent.innerHTML = "<p class='small'>No arXiv papers found.</p>";
+                        return;
+                    }
+
+                    resultsContent.innerHTML = "";
+
+                    data.forEach(item => {
+                        const authors = (item.authors || []).join(", ");
+                        const card = document.createElement("div");
+                        card.className = "evidence-item";
+                        card.innerHTML = `
+                            <div><strong>${item.title || "Untitled"}</strong></div>
+                            <div class="small">Authors: ${authors || "Unknown"}</div>
+                            <div class="small">Category: ${item.primary_category || "Unknown"}</div>
+                            <div class="small">Published: ${item.published || "Unknown"}</div>
+                            <div class="small">arXiv ID: ${item.arxiv_id || ""}</div>
+                            <div style="margin-top:8px;">
+                                <button onclick="ingestArxiv('${item.arxiv_id}')">Ingest into Platform</button>
+                            </div>
+                        `;
+                        resultsContent.appendChild(card);
+                    });
+                } catch (error) {
+                    resultsContent.innerHTML = `<p class='small'>arXiv search failed: ${error}</p>`;
+                }
+            }
+
+            async function ingestArxiv(arxivId) {
+                try {
+                    const response = await fetch(`/research/arxiv-ingest?arxiv_id=${encodeURIComponent(arxivId)}`, {
+                        method: "POST"
+                    });
+                    const data = await response.json();
+
+                    if (data.success) {
+                        alert(`Ingested: ${data.title}`);
+                        document.getElementById("paperSearch").value = data.title || arxivId;
+                        await searchPapers();
+                    } else {
+                        alert(data.message || "Ingest failed.");
+                    }
+                } catch (error) {
+                    alert("Ingest failed: " + error);
                 }
             }
 
             async function askQuestion() {
                 const question = document.getElementById("question").value.trim();
-                const documentId = document.getElementById("documentSelect").value;
-                const resultBox = document.getElementById("result");
                 const answerBox = document.getElementById("answer");
                 const evidenceBox = document.getElementById("evidence");
+                const qaPanel = document.getElementById("qaPanel");
 
                 if (!question) {
                     alert("Please enter a question.");
                     return;
                 }
 
+                if (!currentDocumentId) {
+                    alert("Please open a paper with a full document first.");
+                    return;
+                }
+
+                qaPanel.style.display = "block";
                 answerBox.innerHTML = "Loading...";
                 evidenceBox.innerHTML = "";
-                resultBox.style.display = "block";
 
                 try {
                     const response = await fetch("/documents/ask", {
@@ -371,7 +493,7 @@ def home():
                         },
                         body: JSON.stringify({
                             question: question,
-                            document_id: documentId || null
+                            document_id: currentDocumentId
                         })
                     });
 
@@ -402,8 +524,6 @@ def home():
                     evidenceBox.innerHTML = `<p class='small'>${error}</p>`;
                 }
             }
-
-            loadDocuments();
         </script>
     </body>
     </html>
