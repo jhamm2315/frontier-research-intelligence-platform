@@ -2127,10 +2127,24 @@ async function deleteComparisonHistoryItem(comparisonId) {
             }
 
             function setPlatformFilter(value, button) {
-                platformFilter = value;
-                document.querySelectorAll(".filter-chip").forEach(el => el.classList.remove("active"));
-                if (button) button.classList.add("active");
-            }
+                    platformFilter = value;
+                    AppState.ui.platformFilter = value;
+
+                    document.querySelectorAll(".filter-chip").forEach(el => {
+                        el.classList.remove("active");
+                    });
+
+                    if (button) {
+                        button.classList.add("active");
+                    }
+
+                    const inputEl = document.getElementById("paperSearch");
+                    const resultsContent = document.getElementById("searchResultsContent");
+
+                    if (resultsContent && inputEl && inputEl.value.trim()) {
+                        searchPapers();
+                    }
+                }
 
 async function copyCitation(format) {
     const paperMeta = AppState?.paper?.meta || currentPaperMeta;
@@ -2520,7 +2534,6 @@ async function searchPapers() {
     const inputEl = document.getElementById("paperSearch");
     const resultsContent = document.getElementById("searchResultsContent");
     const query = inputEl ? inputEl.value.trim() : "";
-    const buttonEl = event?.target || null;
 
     if (!resultsContent) {
         console.error("searchResultsContent element not found.");
@@ -2529,14 +2542,19 @@ async function searchPapers() {
 
     if (!query) {
         showToast("Please enter a search term.");
+        resultsContent.innerHTML = "<div class='small'>Enter a search term to find papers.</div>";
         return;
     }
 
     resultsContent.innerHTML = "<div class='small'>Loading platform papers...</div>";
-    setLoading(buttonEl, true, "Searching...");
 
     try {
-        const response = await fetch(`/research/search?q=${encodeURIComponent(query)}&limit=20`);
+        const response = await fetch(`/research/search?q=${encodeURIComponent(query)}&limit=20`, {
+            method: "GET",
+            headers: {
+                "Accept": "application/json"
+            }
+        });
 
         if (!response.ok) {
             throw new Error(`Search request failed with status ${response.status}`);
@@ -2545,22 +2563,33 @@ async function searchPapers() {
         const data = await response.json();
         let filtered = Array.isArray(data) ? data : [];
 
-        if (platformFilter === "full") {
+        const activeFilter = AppState?.ui?.platformFilter || platformFilter || "all";
+
+        if (activeFilter === "full") {
             filtered = filtered.filter(item => item.has_full_document === 1 || item.has_full_document === true);
-        } else if (platformFilter === "metadata") {
+        } else if (activeFilter === "metadata") {
             filtered = filtered.filter(item => item.has_full_document !== 1 && item.has_full_document !== true);
         }
 
         if (!filtered.length) {
-            resultsContent.innerHTML = "<div class='small'>No papers found.</div>";
+            const emptyLabel =
+                activeFilter === "full"
+                    ? "No full-document papers found."
+                    : activeFilter === "metadata"
+                        ? "No metadata-only papers found."
+                        : "No papers found.";
+
+            resultsContent.innerHTML = `<div class='small'>${emptyLabel}</div>`;
             return;
         }
 
         resultsContent.innerHTML = "";
 
         filtered.forEach(item => {
-            const statusClass = item.has_full_document === 1 || item.has_full_document === true ? "full" : "meta";
+            const statusClass =
+                item.has_full_document === 1 || item.has_full_document === true ? "full" : "meta";
             const workId = item.work_id || item.id || "";
+
             const card = document.createElement("div");
             card.className = "result-card";
             card.innerHTML = `
@@ -2581,10 +2610,9 @@ async function searchPapers() {
             resultsContent.appendChild(card);
         });
     } catch (error) {
-        resultsContent.innerHTML = "<div class='small'>Search failed.</div>";
-        handleError("Platform search failed.", error);
-    } finally {
-        setLoading(buttonEl, false);
+        console.error("Platform search failed:", error);
+        resultsContent.innerHTML = "<div class='small'>Search failed. Check the /research/search route.</div>";
+        showToast("Platform search failed.");
     }
 }
 
@@ -2672,37 +2700,45 @@ async function searchArxiv() {
     const resultsContent = document.getElementById("arxivResultsContent");
     const query = inputEl ? inputEl.value.trim() : "";
 
-    if (!query) {
-        showToast("Please enter an arXiv search term.");
+    if (!resultsContent) {
+        console.error("arxivResultsContent element not found.");
         return;
     }
 
-    if (!resultsContent) {
-        console.error("arxivResultsContent element not found.");
+    if (!query) {
+        showToast("Please enter an arXiv search term.");
+        resultsContent.innerHTML = "<div class='small'>Enter a search term to search arXiv.</div>";
         return;
     }
 
     resultsContent.innerHTML = "<div class='small'>Searching arXiv...</div>";
 
     try {
-        const response = await fetch(`/research/arxiv-search?q=${encodeURIComponent(query)}&limit=10`);
+        const response = await fetch(`/research/arxiv-search?q=${encodeURIComponent(query)}&limit=10`, {
+            method: "GET",
+            headers: {
+                "Accept": "application/json"
+            }
+        });
 
         if (!response.ok) {
             throw new Error(`arXiv search failed with status ${response.status}`);
         }
 
         const data = await response.json();
+        const items = Array.isArray(data) ? data : [];
 
-        if (!Array.isArray(data) || data.length === 0) {
+        if (!items.length) {
             resultsContent.innerHTML = "<div class='small'>No arXiv papers found.</div>";
             return;
         }
 
         resultsContent.innerHTML = "";
 
-        data.forEach(item => {
+        items.forEach(item => {
             const authors = Array.isArray(item.authors) ? item.authors.join(", ") : "";
             const arxivId = item.arxiv_id || "";
+
             const card = document.createElement("div");
             card.className = "result-card";
             card.innerHTML = `
@@ -2713,15 +2749,15 @@ async function searchArxiv() {
                 <div class="small">Published: ${escapeHtml(item.published || "Unknown")}</div>
                 <div class="small">arXiv ID: ${escapeHtml(arxivId)}</div>
                 <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:12px;">
-                    <button class="secondary-btn" onclick="ingestArxiv('${escapeHtml(arxivId)}', 'abstract', this)">Quick Ingest</button>
-                    <button class="primary-btn" onclick="ingestArxiv('${escapeHtml(arxivId)}', 'full', this)">Full PDF Ingest</button>
+                    <button class="secondary-btn" onclick="ingestArxiv('${escapeHtml(arxivId)}', 'abstract')">Quick Ingest</button>
+                    <button class="primary-btn" onclick="ingestArxiv('${escapeHtml(arxivId)}', 'full')">Full PDF Ingest</button>
                 </div>
             `;
             resultsContent.appendChild(card);
         });
     } catch (error) {
-        console.error(error);
-        resultsContent.innerHTML = "<div class='small'>arXiv search failed.</div>";
+        console.error("arXiv search failed:", error);
+        resultsContent.innerHTML = "<div class='small'>arXiv search failed. Check the /research/arxiv-search route.</div>";
         showToast("arXiv search failed.");
     }
 }
