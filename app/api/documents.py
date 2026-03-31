@@ -1,13 +1,21 @@
 from pathlib import Path
-import pandas as pd
+
 import numpy as np
-from fastapi import APIRouter, UploadFile, File
+import pandas as pd
+from fastapi import APIRouter, UploadFile, File, Query
 from fastapi.encoders import jsonable_encoder
 from pydantic import BaseModel
 
-from app.services.retrieval_service import retrieve_relevant_chunks
+from app.api.product import _UPLOADED_DOCUMENTS
 from app.services.document_ingestion_service import ingest_existing_file
-from app.services.local_llm_service import answer_question_with_context
+from app.services.local_llm_service import (
+    answer_question_with_context,
+    generate_local_llm_summary,
+)
+from app.services.retrieval_service import retrieve_relevant_chunks
+from app.services.recommendation_tracking_service import (
+    safe_track_recommendation_activity_for_user,
+)
 
 router = APIRouter()
 
@@ -26,6 +34,7 @@ def clean_for_json(df: pd.DataFrame) -> pd.DataFrame:
 class QuestionRequest(BaseModel):
     question: str
     document_id: str | None = None
+    user_id: str | None = None
 
 
 class IngestRequest(BaseModel):
@@ -54,7 +63,10 @@ def list_documents():
 
 
 @router.get("/{document_id}/summary")
-def get_document_summary(document_id: str):
+def get_document_summary(
+    document_id: str,
+    user_id: str | None = Query(None, description="Optional active user identifier"),
+):
     reg_path = PROCESSED_DIR / "document_registry.csv"
     sum_path = PROCESSED_DIR / "document_summaries.csv"
 
@@ -73,7 +85,7 @@ def get_document_summary(document_id: str):
     reg = clean_for_json(reg_row).iloc[0].to_dict()
     summ = clean_for_json(sum_row).iloc[0].to_dict() if not sum_row.empty else {}
 
-    return jsonable_encoder({
+    response = {
         "document_id": reg.get("document_id"),
         "title": reg.get("title"),
         "author": reg.get("author"),
@@ -99,7 +111,25 @@ def get_document_summary(document_id: str):
         "practical_applications": summ.get("practical_applications", ""),
         "suggested_topics": summ.get("suggested_topics", ""),
         "citation_guidance": summ.get("citation_guidance", ""),
-    })
+    }
+
+    safe_track_recommendation_activity_for_user(
+        user_id,
+        "view",
+        {
+            "work_id": reg.get("work_id") or reg.get("source_paper_id") or document_id,
+            "document_id": reg.get("document_id"),
+            "title": reg.get("title"),
+            "author": reg.get("author"),
+            "institution": reg.get("institution"),
+            "topic": reg.get("topic"),
+            "source_system": reg.get("source_system"),
+            "event_source": "documents.summary",
+            "action_context": "document_summary_view",
+        },
+    )
+
+    return jsonable_encoder(response)
 
 
 @router.post("/ingest-existing")
@@ -130,15 +160,106 @@ def summarize_document():
 
 @router.post("/ask")
 def ask_document_question(payload: QuestionRequest):
+    document_id = payload.document_id
+    question = payload.question
+
+    # --- Handle uploaded documents ---
+    if document_id and str(document_id).startswith("uploaded_"):
+        uploaded_doc = _UPLOADED_DOCUMENTS.get(document_id)
+
+        if not uploaded_doc:
+            return jsonable_encoder({
+                "question": question,
+                "answer": "Uploaded document not found.",
+                "evidence": []
+            })
+
+        content = uploaded_doc.get("content", "") or ""
+        metadata = uploaded_doc.get("metadata", {}) or {}
+
+        if not content.strip():
+            return jsonable_encoder({
+                "question": question,
+                "answer": "This uploaded document does not have extracted text available yet.",
+                "evidence": []
+            })
+
+        prompt = f'''
+You are a research assistant answering questions about an uploaded document.
+
+Document Title:
+{metadata.get("title", "Uploaded Document")}
+
+Question:
+{question}
+
+Document Content:
+{content[:12000]}
+
+Instructions:
+- Answer only using the uploaded document content
+- Be clear and helpful
+- If the answer is not explicit, say that clearly
+- Keep the answer concise but informative
+'''
+
+        llm_answer = generate_local_llm_summary(prompt)
+
+        safe_track_recommendation_activity_for_user(
+            payload.user_id,
+            "question",
+            {
+                **metadata,
+                "document_id": document_id,
+                "search_query": question,
+                "event_source": "documents.ask",
+                "action_context": "uploaded_document_question",
+            },
+        )
+
+        return jsonable_encoder({
+            "question": question,
+            "answer": llm_answer,
+            "evidence": [
+                {
+                    "document_id": document_id,
+                    "chunk_id": "uploaded_full_text",
+                    "section_guess": "uploaded_document",
+                    "score": 1.0,
+                    "text": content[:1200]
+                }
+            ]
+        })
+
+    # --- Default retrieval pipeline ---
     chunks = retrieve_relevant_chunks(
-        query=payload.question,
-        document_id=payload.document_id,
+        query=question,
+        document_id=document_id,
         top_k=4
     )
 
-    result = answer_question_with_context(payload.question, chunks)
+    result = answer_question_with_context(question, chunks)
+
+    safe_track_recommendation_activity_for_user(
+        payload.user_id,
+        "question",
+        {
+            "document_id": document_id,
+            "search_query": question,
+            "event_source": "documents.ask",
+            "action_context": "document_question",
+            "metadata": {
+                "evidence_document_ids": [
+                    chunk.get("document_id")
+                    for chunk in result.get("evidence", [])
+                    if chunk.get("document_id")
+                ][:5]
+            },
+        },
+    )
+
     return jsonable_encoder({
-        "question": payload.question,
+        "question": question,
         "answer": result.get("answer", ""),
         "evidence": result.get("evidence", [])
     })

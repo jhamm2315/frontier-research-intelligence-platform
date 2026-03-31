@@ -1,0 +1,32 @@
+{
+  "auto_index_enabled": true,
+  "auto_index_pages": 2,
+  "auto_index_limit_per_source": 25,
+  "auto_index_queries": [
+    "graph neural networks",
+    "causal inference"
+  ],
+  "auto_index_startup_delay_seconds": 30,
+  "auto_index_source_intervals": {
+    "openalex_global": 90,
+    "europe_pmc": 120,
+    "doaj": 720
+  },
+  "auto_index_source_queries": {
+    "openalex_global": [
+      "artificial intelligence",
+      "climate risk",
+      "quantum computing"
+    ],
+    "europe_pmc": [
+      "cancer biomarkers",
+      "genome sequencing",
+      "drug discovery"
+    ],
+    "doaj": [
+      "digital humanities",
+      "education policy",
+      "urban studies"
+    ]
+  }
+}

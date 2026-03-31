@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-intro">
+    <div>
+        <p class="eyebrow">Admin controls</p>
+        <h1>Run the indexer like an operator, not a shell script.</h1>
+    </div>
+    <p class="lede compact">Edit shared queries, per-source cadences, and source-specific topic lanes without touching env vars.</p>
+</section>
+
+<section class="card-grid card-grid-two">
+    <div class="panel">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Scheduler config</p>
+                <h2>Open-access auto indexer</h2>
+            </div>
+        </div>
+        <div class="form-grid">
+            <label class="small-copy"><input id="schedulerEnabled" type="checkbox"> Enable scheduler</label>
+            <input id="schedulerPages" class="input-field" type="number" min="1" max="20" placeholder="Pages per run">
+            <input id="schedulerLimit" class="input-field" type="number" min="1" max="100" placeholder="Limit per source">
+            <input id="schedulerStartupDelay" class="input-field" type="number" min="0" max="3600" placeholder="Startup delay seconds">
+            <textarea id="schedulerQueries" class="textarea-field" placeholder="One shared query per line"></textarea>
+            <textarea id="schedulerSourceIntervals" class="textarea-field" placeholder="openalex_global:90&#10;europe_pmc:120&#10;doaj:720"></textarea>
+            <textarea id="schedulerSourceQueries" class="textarea-field tall" placeholder="openalex_global=artificial intelligence|climate risk|quantum computing&#10;europe_pmc=cancer biomarkers|genome sequencing|drug discovery&#10;doaj=digital humanities|education policy|urban studies"></textarea>
+        </div>
+        <div class="button-row compact">
+            <button id="saveSchedulerConfig" class="primary-button" type="button">Save and restart</button>
+            <button id="refreshSchedulerConfig" class="ghost-button" type="button">Refresh</button>
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Live status</p>
+                <h2>Job health</h2>
+            </div>
+        </div>
+        <div class="list-card inline-card">
+            <h3>Scheduler</h3>
+            <div id="schedulerStatusSummary"></div>
+        </div>
+        <div class="list-card inline-card">
+            <h3>Per-source jobs</h3>
+            <div id="schedulerSourceJobs"></div>
+        </div>
+        <div class="list-card inline-card">
+            <div class="section-heading">
+                <h3>Security scan</h3>
+                <button id="runSecurityScanNow" class="ghost-button" type="button">Run now</button>
+            </div>
+            <div id="securityScanSummary"></div>
+            <div id="securityScanFindings"></div>
+        </div>
+    </div>
+</section>
+
+<section class="panel">
+    <div class="section-heading">
+        <div>
+            <p class="eyebrow">Role management</p>
+            <h2>Admin access</h2>
+        </div>
+        <p class="small-copy">Promote trusted operators. Revoke with less drama.</p>
+    </div>
+
+    <div class="button-row compact" style="margin-bottom: 1rem;">
+        <input id="adminUserSearch" class="input-field" type="text" placeholder="Search by name, email, or Clerk user id">
+        <button id="searchAdminUsers" class="ghost-button" type="button">Search</button>
+        <button id="refreshAdminUsers" class="ghost-button" type="button">Refresh</button>
+    </div>
+
+    <div class="list-card inline-card">
+        <h3>Managed users</h3>
+        <div id="adminUsersList"></div>
+    </div>
+</section>
+
+<section class="panel">
+    <div class="section-heading">
+        <div>
+            <p class="eyebrow">Audit trail</p>
+            <h2>Role change history</h2>
+        </div>
+        <button id="refreshAdminAudit" class="ghost-button" type="button">Refresh history</button>
+    </div>
+
+    <div class="list-card inline-card">
+        <h3>Recent changes</h3>
+        <div id="adminAuditList"></div>
+    </div>
+</section>
+{% endblock %}

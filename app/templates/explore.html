@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-intro">
+    <div>
+        <p class="eyebrow">Explore</p>
+        <h1>Find the paper. Open it. Pressure-test it.</h1>
+    </div>
+    <p class="lede compact">Search platform records, arXiv, and institutional sources without losing the thread.</p>
+</section>
+
+<section class="section-stack" id="platform-search">
+    <div class="panel">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Platform search</p>
+                <h2>Catalog papers</h2>
+            </div>
+            <div class="filter-row">
+                <button class="filter-chip active" data-filter="all">All</button>
+                <button class="filter-chip" data-filter="full">Full text</button>
+                <button class="filter-chip" data-filter="metadata">Metadata only</button>
+            </div>
+        </div>
+        <div class="search-row">
+            <input id="paperSearch" class="input-field" type="text" placeholder="artificial intelligence, graph learning, healthcare">
+            <button id="platformSearchButton" class="primary-button" type="button">Search</button>
+        </div>
+        <div id="searchResultsContent" class="result-grid"></div>
+    </div>
+</section>
+
+<section class="section-stack" id="source-connectors">
+    <div class="panel">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Live connectors</p>
+                <h2>Pull new sources in</h2>
+            </div>
+        </div>
+        <div class="search-row">
+            <input id="arxivSearch" class="input-field" type="text" placeholder="document classification">
+            <button id="arxivSearchButton" class="primary-button" type="button">Search arXiv</button>
+        </div>
+        <div id="arxivResultsContent" class="result-grid"></div>
+    </div>
+
+    <div class="panel">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Institutional search</p>
+                <h2>Global open-access and institutional search</h2>
+            </div>
+        </div>
+        <div class="search-row">
+            <input id="federatedSearch" class="input-field" type="text" placeholder="graph learning">
+            <button id="federatedSearchButton" class="primary-button" type="button">Search sources</button>
+        </div>
+        <p class="small-copy">OpenAlex global OA, Europe PMC, DOAJ, Harvard LibraryCloud, and international university connectors.</p>
+        <div id="federatedResultsContent" class="result-grid"></div>
+    </div>
+</section>
+
+<section class="document-shell" id="paperCard" hidden>
+    <div class="section-heading">
+        <div>
+            <p class="eyebrow">Opened paper</p>
+            <h2 id="paperTitle">Paper title</h2>
+        </div>
+        <span id="availabilityBadge" class="status-pill">Status</span>
+    </div>
+    <div class="meta-grid">
+        <div class="meta-card"><span>Author</span><strong id="paperAuthor"></strong></div>
+        <div class="meta-card"><span>Institution</span><strong id="paperInstitution"></strong></div>
+        <div class="meta-card"><span>Topic</span><strong id="paperTopic"></strong></div>
+        <div class="meta-card"><span>Citation</span><strong id="paperCitation"></strong></div>
+        <div class="meta-card"><span>Published</span><strong id="paperPublished"></strong></div>
+        <div class="meta-card"><span>Source</span><strong id="paperSource"></strong></div>
+    </div>
+    <div id="paperCategories" class="chip-row"></div>
+    <div class="button-row compact">
+        <button class="ghost-button" type="button" id="savePaperButton">Save</button>
+        <button class="ghost-button" type="button" id="queuePaperButton">Queue</button>
+        <button class="ghost-button" type="button" id="favoritePaperButton">Favorite</button>
+        <button class="ghost-button" type="button" data-citation="apa">APA</button>
+        <button class="ghost-button" type="button" data-citation="mla">MLA</button>
+        <button class="ghost-button" type="button" data-citation="chicago">Chicago</button>
+        <button class="ghost-button" type="button" data-citation="bibtex">BibTeX</button>
+        <button class="ghost-button" type="button" data-citation="ris">RIS</button>
+    </div>
+    <div class="summary-grid">
+        <article class="summary-card"><h3>Plain English</h3><p id="plainEnglishSummary"></p></article>
+        <article class="summary-card"><h3>Academic</h3><p id="academicSummary"></p></article>
+        <article class="summary-card"><h3>Methods</h3><p id="methodsSummary"></p></article>
+        <article class="summary-card"><h3>Results</h3><p id="resultsSummary"></p></article>
+        <article class="summary-card"><h3>Limitations</h3><p id="limitationsSummary"></p></article>
+        <article class="summary-card"><h3>Practical</h3><p id="practicalApplications"></p></article>
+        <article class="summary-card"><h3>Suggested topics</h3><p id="suggestedTopics"></p></article>
+        <article class="summary-card"><h3>Citation guidance</h3><p id="citationGuidance"></p></article>
+        <article class="summary-card full-width"><h3>Source link</h3><a id="paperPdfUrl" class="text-link" href="#" target="_blank" rel="noreferrer"></a></article>
+    </div>
+</section>
+
+<section class="section-stack" id="compare-panel">
+    <div class="panel">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Compare</p>
+                <h2>Multi-paper view</h2>
+            </div>
+        </div>
+        <div class="button-row compact">
+            <button id="addCurrentPaperToCompare" class="ghost-button" type="button">Add current paper</button>
+            <button id="clearComparePapers" class="ghost-button" type="button">Clear list</button>
+        </div>
+        <div class="list-card" id="comparePapersList"></div>
+        <textarea id="compareQuestion" class="textarea-field" placeholder="Which paper is best for real-world use?"></textarea>
+        <div class="button-row compact">
+            <button id="runMultiPaperCompare" class="primary-button" type="button">Compare papers</button>
+            <button id="saveCurrentComparison" class="ghost-button" type="button">Save comparison</button>
+        </div>
+        <div id="compareResults" class="summary-grid" hidden>
+            <article class="summary-card full-width"><h3>Summary</h3><div id="compareSummary"></div></article>
+            <article class="summary-card"><h3>Common themes</h3><div id="compareThemes"></div></article>
+            <article class="summary-card"><h3>Differences</h3><div id="compareDifferences"></div></article>
+            <article class="summary-card"><h3>Methods</h3><div id="compareMethods"></div></article>
+            <article class="summary-card"><h3>Results</h3><div id="compareResultsText"></div></article>
+            <article class="summary-card"><h3>Limitations</h3><div id="compareLimitations"></div></article>
+            <article class="summary-card"><h3>Best for students</h3><div id="compareBestStudents"></div></article>
+            <article class="summary-card"><h3>Best for researchers</h3><div id="compareBestResearchers"></div></article>
+            <article class="summary-card"><h3>Recommended</h3><div id="compareRecommended"></div></article>
+            <article class="summary-card full-width"><h3>Practical use</h3><div id="compareBestPractical"></div></article>
+        </div>
+    </div>
+</section>
+
+<section class="section-stack">
+    <div class="panel">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Ask the paper</p>
+                <h2>Grounded Q&amp;A</h2>
+            </div>
+        </div>
+        <textarea id="question" class="textarea-field" placeholder="What methods does this paper use?"></textarea>
+        <div class="button-row compact">
+            <button id="askQuestionButton" class="primary-button" type="button">Ask</button>
+            <button class="ghost-button explain-level" type="button" data-level="high_school">High school</button>
+            <button class="ghost-button explain-level" type="button" data-level="college">College</button>
+            <button class="ghost-button explain-level" type="button" data-level="graduate">Graduate</button>
+            <button class="ghost-button explain-level" type="button" data-level="researcher">Researcher</button>
+        </div>
+        <div id="qaPanel" hidden>
+            <article class="summary-card full-width"><h3>Answer</h3><div id="answer"></div></article>
+            <div id="evidence" class="result-grid"></div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero hero-grid auth-hero">
+    <div class="hero-panel">
+        <p class="eyebrow">Account access</p>
+        <h1>{{ selected_plan.name }} starts here.</h1>
+        <p class="lede">{{ selected_plan.description }}</p>
+        <div class="plan-badge-row">
+            <span class="price-pill">{{ selected_plan.price }}</span>
+            <span class="chip">{{ selected_plan.tagline }}</span>
+        </div>
+        <div class="quote-panel" id="authInsight">
+            <p class="quote-kicker">Research insight</p>
+            <blockquote>Sharp tools reward sharp curiosity.</blockquote>
+            <p class="quote-meta">We will personalize this panel as your interests become obvious.</p>
+        </div>
+        <div class="button-row compact">
+            <a class="ghost-button{% if auth_mode == 'sign-in' %} active{% endif %}" href="/auth?plan={{ selected_plan.code }}&mode=sign-in">Sign in</a>
+            <a class="ghost-button{% if auth_mode != 'sign-in' %} active{% endif %}" href="/auth?plan={{ selected_plan.code }}&mode=sign-up">Sign up</a>
+        </div>
+        <div class="panel" style="margin-top: 1rem;">
+            <p class="eyebrow">Plan selection</p>
+            <div class="button-row compact">
+                {% for plan in plans %}
+                    <a class="ghost-button{% if plan.code == selected_plan.code %} active{% endif %}" href="/auth?plan={{ plan.code }}&mode={{ auth_mode }}">{{ plan.name }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <aside class="auth-card">
+        <div class="section-heading compact">
+            <div>
+                <p class="eyebrow">Secure sign in</p>
+                <h2 id="authModeHeading">{{ "Sign in" if auth_mode == "sign-in" else "Create account" }}</h2>
+            </div>
+        </div>
+        <p class="small-copy">Selected plan: <strong id="selectedPlanLabel">{{ selected_plan.name }}</strong></p>
+        <div id="clerkMount" class="auth-mount">
+            <div class="small-copy">Loading secure access...</div>
+        </div>
+        <div class="panel" style="margin-top: 1rem;">
+            <p class="eyebrow">Profile setup</p>
+            <div class="form-grid">
+                <input id="authUsername" class="input-field" type="text" placeholder="Username">
+                <input id="authFullName" class="input-field" type="text" placeholder="Full name">
+                <input id="authInstitution" class="input-field" type="text" placeholder="School, lab, or company">
+                <input id="authRoleTitle" class="input-field" type="text" placeholder="Role or focus">
+                <input id="authResearchInterests" class="input-field" type="text" placeholder="Interests: AI, biotech, climate">
+                <input id="authGithubUrl" class="input-field" type="url" placeholder="GitHub URL">
+                <input id="authLinkedinUrl" class="input-field" type="url" placeholder="LinkedIn URL">
+                <textarea id="authIntroNote" class="textarea-field" placeholder="Short intro, goals, or what you want the platform to help with."></textarea>
+            </div>
+        </div>
+        <div class="panel" style="margin-top: 1rem;">
+            <p class="eyebrow">Billing handoff</p>
+            <p class="small-copy">We collect billing intent here, then route payment through Stripe checkout. No raw card data lives in this form.</p>
+            <div class="form-grid">
+                <input id="billingName" class="input-field" type="text" placeholder="Billing name">
+                <input id="billingEmail" class="input-field" type="email" placeholder="Billing email">
+                <input id="billingCountry" class="input-field" type="text" placeholder="Country">
+                <input id="billingPostalCode" class="input-field" type="text" placeholder="Postal code">
+            </div>
+            <div class="button-row compact">
+                <a class="primary-button" href="/pricing">Choose tier and checkout</a>
+                <button class="ghost-button" type="button" id="authSaveProfile">Save profile details</button>
+            </div>
+        </div>
+        <div class="button-row compact" style="margin-top: 1rem;">
+            <button class="ghost-button" type="button" id="connectGithub">Connect GitHub</button>
+            <button class="ghost-button" type="button" id="connectLinkedin">Connect LinkedIn</button>
+        </div>
+        <div class="button-row">
+            <button class="ghost-button" type="button" id="authToggle">{{ "Need an account?" if auth_mode == "sign-in" else "Already signed up?" }}</button>
+            <a class="ghost-button" href="/pricing">Back to pricing</a>
+        </div>
+        <p class="small-copy muted" id="authStateHint">Clerk handles auth. Stripe should handle payment. This page only collects profile context and billing intent.</p>
+    </aside>
+</section>
+{% endblock %}

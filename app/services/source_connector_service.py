@@ -1,12 +1,17 @@
 from pathlib import Path
 import requests
-import time
 import xml.etree.ElementTree as ET
+import fitz  # pymupdf
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 RAW_DOC_DIR = PROJECT_ROOT / "data" / "raw" / "sample_research_documents"
+TEMP_DIR = PROJECT_ROOT / "data" / "raw" / "temp_downloads"
 
 ARXIV_API_URL = "http://export.arxiv.org/api/query"
+
+RAW_DOC_DIR.mkdir(parents=True, exist_ok=True)
+TEMP_DIR.mkdir(parents=True, exist_ok=True)
+_SESSION = requests.Session()
 
 
 def safe_text(value: str | None) -> str:
@@ -77,7 +82,12 @@ def search_arxiv(query: str, max_results: int = 10) -> list[dict]:
         "max_results": max_results,
     }
 
-    response = requests.get(ARXIV_API_URL, params=params, timeout=60)
+    response = _SESSION.get(
+        ARXIV_API_URL,
+        params=params,
+        timeout=60,
+        headers={"User-Agent": "FrontierResearchIntelligence/1.0"},
+    )
     response.raise_for_status()
 
     root = ET.fromstring(response.text)
@@ -89,7 +99,6 @@ def search_arxiv(query: str, max_results: int = 10) -> list[dict]:
     entries = root.findall("atom:entry", ns)
     results = [parse_arxiv_entry(entry) for entry in entries]
 
-    time.sleep(3)
     return results
 
 
@@ -100,7 +109,12 @@ def fetch_arxiv_by_id(arxiv_id: str) -> dict | None:
         "max_results": 1,
     }
 
-    response = requests.get(ARXIV_API_URL, params=params, timeout=60)
+    response = _SESSION.get(
+        ARXIV_API_URL,
+        params=params,
+        timeout=60,
+        headers={"User-Agent": "FrontierResearchIntelligence/1.0"},
+    )
     response.raise_for_status()
 
     root = ET.fromstring(response.text)
@@ -110,8 +124,6 @@ def fetch_arxiv_by_id(arxiv_id: str) -> dict | None:
     }
 
     entry = root.find("atom:entry", ns)
-    time.sleep(3)
-
     if entry is None:
         return None
 
@@ -169,4 +181,82 @@ This document was automatically ingested from arXiv and is now available for met
     file_name = f"arxiv_{slugify_filename(arxiv_id or title)}.txt"
     out_path = RAW_DOC_DIR / file_name
     out_path.write_text(content, encoding="utf-8")
+    return out_path
+
+
+def download_arxiv_pdf(record: dict) -> Path | None:
+    pdf_url = record.get("pdf_url", "")
+    arxiv_id = record.get("arxiv_id", "")
+
+    if not pdf_url:
+        return None
+
+    out_path = TEMP_DIR / f"{slugify_filename(arxiv_id or 'paper')}.pdf"
+
+    response = _SESSION.get(
+        pdf_url,
+        timeout=120,
+        headers={"User-Agent": "FrontierResearchIntelligence/1.0"},
+    )
+    response.raise_for_status()
+
+    out_path.write_bytes(response.content)
+    return out_path
+
+
+def extract_text_from_pdf(pdf_path: Path) -> str:
+    text_parts = []
+    with fitz.open(pdf_path) as doc:
+        for page in doc:
+            text_parts.append(page.get_text())
+    return "\n".join(text_parts)
+
+
+def build_fulltext_document_from_arxiv_pdf(record: dict) -> Path:
+    title = record.get("title", "Untitled")
+    authors = ", ".join(record.get("authors", [])) if record.get("authors") else "Unknown"
+    topic = record.get("primary_category", "Unknown")
+    arxiv_id = record.get("arxiv_id", "")
+    published = record.get("published", "")
+    updated = record.get("updated", "")
+    pdf_url = record.get("pdf_url", "")
+    entry_id = record.get("entry_id", "")
+    categories = ", ".join(record.get("categories", []))
+    citation = f"{authors} ({published[:4]}). {title}. arXiv:{arxiv_id}"
+
+    pdf_path = download_arxiv_pdf(record)
+    extracted_text = ""
+
+    if pdf_path and pdf_path.exists():
+        try:
+            extracted_text = extract_text_from_pdf(pdf_path)
+        except Exception as e:
+            extracted_text = f"PDF extraction failed: {e}"
+
+    if not extracted_text.strip():
+        extracted_text = record.get("summary", "")
+
+    content = f"""Title: {title}
+Author: {authors}
+Institution: arXiv Submission
+Topic: {topic}
+Citation: {citation}
+Source System: arXiv
+Source Paper ID: {arxiv_id}
+Published: {published}
+Updated: {updated}
+PDF URL: {pdf_url}
+Entry URL: {entry_id}
+Categories: {categories}
+
+Abstract:
+{record.get("summary", "")}
+
+Full Text:
+{extracted_text}
+"""
+
+    file_name = f"arxiv_full_{slugify_filename(arxiv_id or title)}.txt"
+    out_path = RAW_DOC_DIR / file_name
+    out_path.write_text(content, encoding="utf-8", errors="ignore")
     return out_path

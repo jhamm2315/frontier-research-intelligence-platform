@@ -1,0 +1,24 @@
+{
+  "demo_user": {
+    "user_id": "demo_user",
+    "saved_papers": [
+      {
+        "work_id": "W_TEST_001",
+        "title": "Example Research Paper",
+        "authors": [
+          "Jane Doe",
+          "John Smith"
+        ],
+        "publication_year": 2026,
+        "institution": "MIT",
+        "pdf_url": "https://example.org/paper.pdf",
+        "saved_at": "2026-03-17T18:46:02.228943"
+      }
+    ],
+    "notes": [],
+    "draft_sections": [],
+    "reading_queue": [],
+    "favorites": [],
+    "updated_at": "2026-03-17T18:46:02.228946"
+  }
+}

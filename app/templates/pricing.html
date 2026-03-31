@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-intro">
+    <div>
+        <p class="eyebrow">Pricing</p>
+        <h1>Simple plans. Premium feel. Room to grow.</h1>
+    </div>
+    <p class="lede compact">Pick a plan, carry it into auth, and keep checkout clean when Stripe goes live.</p>
+</section>
+
+<section class="card-grid card-grid-three">
+    {% for plan in plans %}
+        <article class="pricing-card">
+            <p class="eyebrow">{{ plan.tagline }}</p>
+            <h2>{{ plan.name }}</h2>
+            <div class="price-pill">{{ plan.price }}</div>
+            <p>{{ plan.description }}</p>
+            <ul class="tight-list">
+                {% if plan.code == "student" %}
+                    <li>More search and question headroom</li>
+                    <li>Research-friendly uploads</li>
+                    <li>Best for solo student workflows</li>
+                {% elif plan.code == "pro" %}
+                    <li>Higher daily limits</li>
+                    <li>Stronger workspace pace</li>
+                    <li>Best for regular research use</li>
+                {% else %}
+                    <li>Team-ready direction</li>
+                    <li>Commercial analytics foundation</li>
+                    <li>Built for scale-minded operators</li>
+                {% endif %}
+            </ul>
+            <div class="button-row compact">
+                <a class="primary-button pricing-checkout" data-plan="{{ plan.code }}" href="/auth?plan={{ plan.code }}&mode=sign-up">Choose {{ plan.name }}</a>
+            </div>
+        </article>
+    {% endfor %}
+</section>
+{% endblock %}

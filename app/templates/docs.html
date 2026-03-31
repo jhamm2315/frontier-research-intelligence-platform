@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-intro">
+    <div>
+        <p class="eyebrow">Documentation</p>
+        <h1>The deeper notes live here, not on your launch screen.</h1>
+    </div>
+    <p class="lede compact">Workflows, route coverage, ingestion guardrails, and product behavior in one tidy place.</p>
+</section>
+
+<section class="card-grid card-grid-two">
+    <article class="feature-card">
+        <h2>Core workflows</h2>
+        <ul class="tight-list">
+            <li>Search catalog, arXiv, and federated institutional sources</li>
+            <li>Open papers, read summaries, and ask grounded questions</li>
+            <li>Save, queue, favorite, compare, and build drafts</li>
+            <li>Upload local files or ingest public URLs</li>
+        </ul>
+    </article>
+    <article class="feature-card">
+        <h2>Backend surfaces</h2>
+        <ul class="tight-list">
+            <li>`/research/*` for discovery and source ingestion</li>
+            <li>`/documents/*` for summaries and grounded Q&amp;A</li>
+            <li>`/product/*` for workspace, citations, auth sync, exports, and uploads</li>
+            <li>`/admin/*` for plans, dashboard summaries, and webhook entrypoints</li>
+        </ul>
+    </article>
+    <article class="feature-card">
+        <h2>Open-access policy</h2>
+        <ul class="tight-list">
+            <li>API-first where available</li>
+            <li>No paywall bypassing</li>
+            <li>No aggressive crawling</li>
+            <li>Verified URLs and provenance retained</li>
+        </ul>
+    </article>
+    <article class="feature-card">
+        <h2>Auth and billing notes</h2>
+        <ul class="tight-list">
+            <li>Clerk publishable key is env-driven</li>
+            <li>Supabase-backed profile sync is supported</li>
+            <li>Stripe publishable key and price IDs are config-ready</li>
+            <li>Checkout session creation still needs your live server-side Stripe flow</li>
+        </ul>
+    </article>
+</section>
+{% endblock %}

@@ -10,10 +10,16 @@ networkx
 fastapi
 uvicorn
 pydantic
+PyJWT
+jinja2
 python-multipart
 requests
+beautifulsoup4
+python-dotenv
+supabase
 jupyter
 pymupdf
 python-docx
+reportlab
 sentence-transformers
 faiss-cpu

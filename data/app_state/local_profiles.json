@@ -1,0 +1,57 @@
+{
+  "demo_user": {
+    "id": "local_demo_user",
+    "clerk_user_id": "demo_user",
+    "email": "demo@example.com",
+    "full_name": "Demo User",
+    "first_name": null,
+    "last_name": null,
+    "avatar_url": null,
+    "plan": "student",
+    "auth_provider": "clerk",
+    "created_at": "2026-03-30T18:25:50.736206",
+    "updated_at": "2026-03-30T18:25:50.736213"
+  },
+  "member_user_1": {
+    "id": "local_member_user_1",
+    "clerk_user_id": "member_user_1",
+    "email": "member@example.com",
+    "full_name": "Member One",
+    "first_name": null,
+    "last_name": null,
+    "avatar_url": null,
+    "plan": "student",
+    "auth_provider": "local",
+    "is_admin": false,
+    "created_at": "2026-03-30T19:13:45.407929",
+    "updated_at": "2026-03-30T19:47:59.430923"
+  },
+  "admin_profile_user": {
+    "id": "local_admin_profile_user",
+    "clerk_user_id": "admin_profile_user",
+    "email": null,
+    "full_name": "Admin Profile User",
+    "first_name": null,
+    "last_name": null,
+    "avatar_url": null,
+    "plan": "free",
+    "auth_provider": "clerk",
+    "is_admin": true,
+    "created_at": "2026-03-30T19:13:45.417631",
+    "updated_at": "2026-03-30T19:13:45.418972"
+  },
+  "member_user": {
+    "id": "local_member_user",
+    "clerk_user_id": "member_user",
+    "email": null,
+    "full_name": "Member User",
+    "first_name": null,
+    "last_name": null,
+    "avatar_url": null,
+    "plan": "free",
+    "auth_provider": "local",
+    "is_admin": false,
+    "created_at": "2026-03-30T21:14:26.152078",
+    "updated_at": "2026-03-30T21:14:26.152085"
+  }
+}

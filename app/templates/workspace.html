@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-intro">
+    <div>
+        <p class="eyebrow">Workspace</p>
+        <h1>Saved papers, notes, uploads, and a draft that can leave the room with you.</h1>
+    </div>
+    <p class="lede compact">Useful, tidy, and ready for the next research sprint.</p>
+</section>
+
+<section class="card-grid card-grid-four">
+    <article class="list-card"><h2>Saved</h2><div id="savedPapersList"></div></article>
+    <article class="list-card"><h2>Queue</h2><div id="readingQueueList"></div></article>
+    <article class="list-card"><h2>Favorites</h2><div id="favoritesList"></div></article>
+    <article class="list-card"><h2>Recent</h2><div id="recentPapersList"></div></article>
+</section>
+
+<section class="section-stack">
+    <div class="panel">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Notes</p>
+                <h2>Quick note</h2>
+            </div>
+        </div>
+        <textarea id="quickNote" class="textarea-field" placeholder="Keep the good thought before it runs away."></textarea>
+        <div class="button-row compact">
+            <button id="saveQuickNote" class="primary-button" type="button">Save note</button>
+        </div>
+        <div class="list-card inline-card"><h3>Recent notes</h3><div id="notesList"></div></div>
+    </div>
+</section>
+
+<section class="section-stack" id="builder-panel">
+    <div class="panel">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Builder</p>
+                <h2>Draft builder</h2>
+            </div>
+        </div>
+        <div class="form-grid">
+            <input id="builderTitle" class="input-field" type="text" placeholder="AI trends in document classification">
+            <textarea id="builderAbstract" class="textarea-field" placeholder="Abstract or thesis"></textarea>
+            <textarea id="builderSection" class="textarea-field tall" placeholder="Draft a section"></textarea>
+        </div>
+        <div class="button-row compact">
+            <button id="saveBuilderDraft" class="primary-button" type="button">Save draft</button>
+            <button id="copyBuilderMarkdown" class="ghost-button" type="button">Copy Markdown</button>
+            <button id="copyBuilderHtml" class="ghost-button" type="button">Copy HTML</button>
+            <button id="exportBuilderDocx" class="ghost-button" type="button">DOCX</button>
+            <button id="exportBuilderPdf" class="ghost-button" type="button">PDF</button>
+        </div>
+        <article class="summary-card full-width"><h3>Preview</h3><div id="builderPreview"></div></article>
+    </div>
+</section>
+
+<section class="card-grid card-grid-two">
+    <div class="panel">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Uploads</p>
+                <h2>Local file or public URL</h2>
+            </div>
+        </div>
+        <input id="uploadFileInput" class="input-field" type="file" accept=".pdf,.txt,.docx,application/pdf,text/plain,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+        <input id="urlIngestInput" class="input-field" type="text" placeholder="https://example.edu/paper.pdf">
+        <div class="button-row compact">
+            <button id="uploadLocalFileButton" class="primary-button" type="button">Upload file</button>
+            <button id="uploadUrlButton" class="ghost-button" type="button">Ingest URL</button>
+        </div>
+        <div class="list-card inline-card"><h3>Uploaded sources</h3><div id="uploadedSourcesList"></div></div>
+    </div>
+
+    <div class="panel">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Comparisons</p>
+                <h2>History</h2>
+            </div>
+        </div>
+        <div class="button-row compact">
+            <button id="refreshComparisonHistory" class="ghost-button" type="button">Refresh</button>
+        </div>
+        <div class="list-card inline-card"><h3>Saved comparisons</h3><div id="comparisonHistoryList"></div></div>
+    </div>
+</section>
+{% endblock %}

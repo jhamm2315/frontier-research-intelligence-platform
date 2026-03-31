@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero hero-grid">
+    <div class="hero-panel">
+        <p class="eyebrow">Research discovery, minus the chaos</p>
+        <h1>Search first. Think faster. Keep the good papers close.</h1>
+        <p class="lede">A premium research workspace for students, analysts, and serious academic night owls.</p>
+        <div class="button-row">
+            <a class="primary-button" href="/explore">Explore research</a>
+            <a class="ghost-button" href="/workspace">Open workspace</a>
+            <a class="ghost-button" href="/pricing">See pricing</a>
+        </div>
+        <div class="chip-row">
+            {% for item in featured_workflows %}
+                <span class="chip">{{ item }}</span>
+            {% endfor %}
+        </div>
+    </div>
+    <aside class="hero-aside">
+        <div class="stat-card">
+            <span>Modes</span>
+            <strong>Search + Chat + Build</strong>
+        </div>
+        <div class="stat-card">
+            <span>Sources</span>
+            <strong>Catalog, arXiv, institutions</strong>
+        </div>
+        <div class="stat-card">
+            <span>Vibe</span>
+            <strong>Conversation starter for serious thinkers</strong>
+        </div>
+    </aside>
+</section>
+
+<section class="card-grid card-grid-three">
+    <article class="feature-card">
+        <p class="eyebrow">Explore</p>
+        <h2>Platform, arXiv, and institutional search in one place.</h2>
+        <p>Compact cards. Fast filters. Less wandering.</p>
+    </article>
+    <article class="feature-card">
+        <p class="eyebrow">Interrogate</p>
+        <h2>Ask the paper, compare sources, and keep evidence visible.</h2>
+        <p>Useful answers. No theatrical hand-waving.</p>
+    </article>
+    <article class="feature-card">
+        <p class="eyebrow">Build</p>
+        <h2>Save papers, keep notes, and export draft work without friction.</h2>
+        <p>Your late-night study weapon now remembers things.</p>
+    </article>
+</section>
+
+<section class="section-stack">
+    <div class="section-heading">
+        <div>
+            <p class="eyebrow">Fast paths</p>
+            <h2>Choose your route.</h2>
+        </div>
+    </div>
+    <div class="card-grid card-grid-four">
+        <a class="utility-card" href="/explore#platform-search">
+            <strong>Search platform papers</strong>
+            <span>Open records already in the catalog.</span>
+        </a>
+        <a class="utility-card" href="/explore#source-connectors">
+            <strong>Pull from arXiv</strong>
+            <span>Ingest abstracts or full PDFs.</span>
+        </a>
+        <a class="utility-card" href="/explore#compare-panel">
+            <strong>Compare papers</strong>
+            <span>Get a structured summary, not a shrug.</span>
+        </a>
+        <a class="utility-card" href="/workspace#builder-panel">
+            <strong>Build a draft</strong>
+            <span>Keep sections, sources, and exports moving.</span>
+        </a>
+    </div>
+</section>
+{% endblock %}

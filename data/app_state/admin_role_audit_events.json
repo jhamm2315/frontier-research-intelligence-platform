@@ -1,0 +1,19 @@
+[
+  {
+    "id": "local_role_audit_1",
+    "created_at": "2026-03-30T19:23:11.311658",
+    "actor_clerk_user_id": "admin_user_1",
+    "target_clerk_user_id": "member_user_1",
+    "action": "grant_admin",
+    "admin_source": "profile_flag",
+    "previous_is_admin": false,
+    "new_is_admin": true,
+    "metadata": {
+      "actor_source": "env_allowlist",
+      "persistence_mode": "local_fallback",
+      "target_email": "member@example.com",
+      "target_full_name": "Member One",
+      "target_plan": "student"
+    }
+  }
+]

@@ -1,0 +1,6066 @@
+[
+  {
+    "id": "run_256",
+    "created_at": "2026-03-31T16:47:51.040526+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://quantum-journal.org/papers/q-2018-08-06-79/pdf/",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/9171629/9316332/09318753.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T16:47:51.038489+00:00"
+  },
+  {
+    "id": "run_255",
+    "created_at": "2026-03-31T16:47:49.331991+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://academic.oup.com/rfs/article-pdf/33/3/1067/32449220/hhz137.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007/s10584-014-1084-5.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T16:47:49.331288+00:00"
+  },
+  {
+    "id": "run_254",
+    "created_at": "2026-03-31T16:47:47.201467+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007%2Fs40593-016-0110-3.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T16:47:47.196579+00:00"
+  },
+  {
+    "id": "run_253",
+    "created_at": "2026-03-31T16:47:15.312987+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/5ABCF5B3FC3089A87FD59CECBB3465C0/S1047198700012985a.pdf/div-class-title-causal-inference-without-balance-checking-coarsened-exact-matching-div.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/joim.12577"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T16:47:15.311935+00:00"
+  },
+  {
+    "id": "run_252",
+    "created_at": "2026-03-31T16:46:44.987462+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://www.nature.com/articles/s41467-022-29939-5.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://www.biorxiv.org/content/biorxiv/early/2023/05/16/2023.05.16.541002.full.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T16:46:44.982740+00:00"
+  },
+  {
+    "id": "run_251",
+    "created_at": "2026-03-31T16:19:51.041880+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "drug discovery",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T16:19:51.036628+00:00"
+  },
+  {
+    "id": "run_250",
+    "created_at": "2026-03-31T16:19:49.830281+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "genome sequencing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T16:19:49.821937+00:00"
+  },
+  {
+    "id": "run_249",
+    "created_at": "2026-03-31T16:19:48.589864+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "cancer biomarkers",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T16:19:48.525413+00:00"
+  },
+  {
+    "id": "run_248",
+    "created_at": "2026-03-31T15:44:00.961485+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=all%3Acausal+inference&start=0&max_results=25",
+      "page 2: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=all%3Acausal+inference&start=0&max_results=25"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T15:44:00.958337+00:00"
+  },
+  {
+    "id": "run_247",
+    "created_at": "2026-03-31T15:44:00.281269+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://drops.dagstuhl.de/storage/00lipics/lipics-vol301-sea2024/LIPIcs.SEA.2024.20/LIPIcs.SEA.2024.20.pdf",
+      "page 2: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=all%3Agraph+neural+networks&start=0&max_results=25"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T15:44:00.273818+00:00"
+  },
+  {
+    "id": "run_246",
+    "created_at": "2026-03-31T15:17:12.823333+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://quantum-journal.org/papers/q-2018-08-06-79/pdf/",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/9171629/9316332/09318753.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T15:17:12.821496+00:00"
+  },
+  {
+    "id": "run_245",
+    "created_at": "2026-03-31T15:17:11.214164+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://academic.oup.com/rfs/article-pdf/33/3/1067/32449220/hhz137.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007/s10584-014-1084-5.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T15:17:11.209299+00:00"
+  },
+  {
+    "id": "run_244",
+    "created_at": "2026-03-31T15:17:09.438609+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007%2Fs40593-016-0110-3.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T15:17:09.437032+00:00"
+  },
+  {
+    "id": "run_243",
+    "created_at": "2026-03-31T14:19:44.719856+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "drug discovery",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T14:19:44.716931+00:00"
+  },
+  {
+    "id": "run_242",
+    "created_at": "2026-03-31T14:19:43.345552+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "genome sequencing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T14:19:43.340851+00:00"
+  },
+  {
+    "id": "run_241",
+    "created_at": "2026-03-31T14:19:41.922914+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "cancer biomarkers",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T14:19:41.917659+00:00"
+  },
+  {
+    "id": "run_240",
+    "created_at": "2026-03-31T13:46:56.131293+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://quantum-journal.org/papers/q-2018-08-06-79/pdf/",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/9171629/9316332/09318753.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T13:46:56.129591+00:00"
+  },
+  {
+    "id": "run_239",
+    "created_at": "2026-03-31T13:46:54.575026+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://academic.oup.com/rfs/article-pdf/33/3/1067/32449220/hhz137.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007/s10584-014-1084-5.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T13:46:54.573344+00:00"
+  },
+  {
+    "id": "run_238",
+    "created_at": "2026-03-31T13:46:52.475961+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007%2Fs40593-016-0110-3.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T13:46:52.472281+00:00"
+  },
+  {
+    "id": "run_237",
+    "created_at": "2026-03-31T12:15:49.343452+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "drug discovery",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T12:15:49.340927+00:00"
+  },
+  {
+    "id": "run_236",
+    "created_at": "2026-03-31T12:15:47.949401+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "genome sequencing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T12:15:47.946449+00:00"
+  },
+  {
+    "id": "run_235",
+    "created_at": "2026-03-31T12:15:46.711115+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "cancer biomarkers",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T12:15:46.704877+00:00"
+  },
+  {
+    "id": "run_234",
+    "created_at": "2026-03-31T12:15:45.414032+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://quantum-journal.org/papers/q-2018-08-06-79/pdf/",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/9171629/9316332/09318753.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T12:15:45.412807+00:00"
+  },
+  {
+    "id": "run_233",
+    "created_at": "2026-03-31T12:15:43.770946+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://academic.oup.com/rfs/article-pdf/33/3/1067/32449220/hhz137.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007/s10584-014-1084-5.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T12:15:43.765334+00:00"
+  },
+  {
+    "id": "run_232",
+    "created_at": "2026-03-31T12:15:41.838285+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007%2Fs40593-016-0110-3.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T12:15:41.834701+00:00"
+  },
+  {
+    "id": "run_231",
+    "created_at": "2026-03-31T11:43:02.428333+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.7554/elife.34408",
+      "page 2: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T11:43:02.419158+00:00"
+  },
+  {
+    "id": "run_230",
+    "created_at": "2026-03-31T11:26:12.928817+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://drops.dagstuhl.de/storage/00lipics/lipics-vol301-sea2024/LIPIcs.SEA.2024.20/LIPIcs.SEA.2024.20.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/6287639/9312710/09439502.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T11:26:12.923435+00:00"
+  },
+  {
+    "id": "run_229",
+    "created_at": "2026-03-31T10:46:01.649060+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/5ABCF5B3FC3089A87FD59CECBB3465C0/S1047198700012985a.pdf/div-class-title-causal-inference-without-balance-checking-coarsened-exact-matching-div.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/joim.12577"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T10:46:01.646905+00:00"
+  },
+  {
+    "id": "run_228",
+    "created_at": "2026-03-31T10:41:41.507677+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://www.nature.com/articles/s41467-022-29939-5.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://www.biorxiv.org/content/biorxiv/early/2023/05/16/2023.05.16.541002.full.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T10:41:41.504535+00:00"
+  },
+  {
+    "id": "run_227",
+    "created_at": "2026-03-31T10:23:42.060025+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://quantum-journal.org/papers/q-2018-08-06-79/pdf/",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/9171629/9316332/09318753.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T10:23:42.058159+00:00"
+  },
+  {
+    "id": "run_226",
+    "created_at": "2026-03-31T10:23:39.946858+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://academic.oup.com/rfs/article-pdf/33/3/1067/32449220/hhz137.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007/s10584-014-1084-5.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T10:23:39.944776+00:00"
+  },
+  {
+    "id": "run_225",
+    "created_at": "2026-03-31T10:23:38.322003+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007%2Fs40593-016-0110-3.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T10:23:38.315937+00:00"
+  },
+  {
+    "id": "run_224",
+    "created_at": "2026-03-31T09:51:11.412996+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "urban studies",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: http://www.sciencedirect.com/science/article/pii/S0160412019337286",
+      "page 2: URL host is not in the open-access allowlist: https://ges.rgo.ru/jour/article/view/3197"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T09:51:11.410578+00:00"
+  },
+  {
+    "id": "run_223",
+    "created_at": "2026-03-31T09:51:10.816343+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "education policy",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: http://www.sciencedirect.com/science/article/pii/S2666558123000349",
+      "page 2: URL host is not in the open-access allowlist: https://www.ajol.info/index.php/sajee/article/view/272736"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T09:51:10.810316+00:00"
+  },
+  {
+    "id": "run_222",
+    "created_at": "2026-03-31T09:51:10.189137+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "digital humanities",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://oajournals.fupress.net/index.php/bsfm-lea/article/view/7765",
+      "page 2: URL host is not in the open-access allowlist: https://www.frontiersin.org/articles/10.3389/fpsyg.2021.718700/full"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T09:51:10.187252+00:00"
+  },
+  {
+    "id": "run_221",
+    "created_at": "2026-03-31T09:51:09.504405+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "drug discovery",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T09:51:09.500848+00:00"
+  },
+  {
+    "id": "run_220",
+    "created_at": "2026-03-31T09:51:08.297720+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "genome sequencing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T09:51:08.290396+00:00"
+  },
+  {
+    "id": "run_219",
+    "created_at": "2026-03-31T09:51:07.103186+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "cancer biomarkers",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T09:51:07.094129+00:00"
+  },
+  {
+    "id": "run_218",
+    "created_at": "2026-03-31T08:43:37.186503+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://quantum-journal.org/papers/q-2018-08-06-79/pdf/",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/9171629/9316332/09318753.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T08:43:37.184729+00:00"
+  },
+  {
+    "id": "run_217",
+    "created_at": "2026-03-31T08:43:35.775384+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://academic.oup.com/rfs/article-pdf/33/3/1067/32449220/hhz137.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007/s10584-014-1084-5.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T08:43:35.774539+00:00"
+  },
+  {
+    "id": "run_216",
+    "created_at": "2026-03-31T08:43:33.912166+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007%2Fs40593-016-0110-3.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T08:43:33.910526+00:00"
+  },
+  {
+    "id": "run_215",
+    "created_at": "2026-03-31T07:23:16.531089+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "drug discovery",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T07:23:16.527878+00:00"
+  },
+  {
+    "id": "run_214",
+    "created_at": "2026-03-31T07:23:15.205203+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "genome sequencing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T07:23:15.202165+00:00"
+  },
+  {
+    "id": "run_213",
+    "created_at": "2026-03-31T07:23:13.898823+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "cancer biomarkers",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T07:23:13.897002+00:00"
+  },
+  {
+    "id": "run_212",
+    "created_at": "2026-03-31T07:23:12.490013+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.7554/elife.34408",
+      "page 2: URL host is not in the open-access allowlist: https://academic.oup.com/ije/article-pdf/45/6/1787/32531173/dyw114.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T07:23:12.486429+00:00"
+  },
+  {
+    "id": "run_211",
+    "created_at": "2026-03-31T06:48:44.432371+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://drops.dagstuhl.de/storage/00lipics/lipics-vol301-sea2024/LIPIcs.SEA.2024.20/LIPIcs.SEA.2024.20.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/6287639/9312710/09439502.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T06:48:44.428969+00:00"
+  },
+  {
+    "id": "run_210",
+    "created_at": "2026-03-31T05:05:15.574268+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://quantum-journal.org/papers/q-2018-08-06-79/pdf/",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/9171629/9316332/09318753.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T05:05:15.570960+00:00"
+  },
+  {
+    "id": "run_209",
+    "created_at": "2026-03-31T05:05:14.364619+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://academic.oup.com/rfs/article-pdf/33/3/1067/32449220/hhz137.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007/s10584-014-1084-5.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T05:05:14.362506+00:00"
+  },
+  {
+    "id": "run_208",
+    "created_at": "2026-03-31T05:05:12.753887+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007%2Fs40593-016-0110-3.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T05:05:12.743923+00:00"
+  },
+  {
+    "id": "run_207",
+    "created_at": "2026-03-31T04:08:49.964433+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "drug discovery",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T04:08:49.962565+00:00"
+  },
+  {
+    "id": "run_206",
+    "created_at": "2026-03-31T04:08:48.603869+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "genome sequencing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T04:08:48.600857+00:00"
+  },
+  {
+    "id": "run_205",
+    "created_at": "2026-03-31T04:08:47.186702+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "cancer biomarkers",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T04:08:47.183691+00:00"
+  },
+  {
+    "id": "run_204",
+    "created_at": "2026-03-31T04:08:45.216975+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/5ABCF5B3FC3089A87FD59CECBB3465C0/S1047198700012985a.pdf/div-class-title-causal-inference-without-balance-checking-coarsened-exact-matching-div.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/joim.12577"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T04:08:45.213642+00:00"
+  },
+  {
+    "id": "run_203",
+    "created_at": "2026-03-31T03:51:50.492544+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://www.nature.com/articles/s41467-022-29939-5.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://www.biorxiv.org/content/biorxiv/early/2023/05/16/2023.05.16.541002.full.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T03:51:50.489173+00:00"
+  },
+  {
+    "id": "run_202",
+    "created_at": "2026-03-31T03:33:06.494951+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://quantum-journal.org/papers/q-2018-08-06-79/pdf/",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/9171629/9316332/09318753.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T03:33:06.492261+00:00"
+  },
+  {
+    "id": "run_201",
+    "created_at": "2026-03-31T03:33:04.512320+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://academic.oup.com/rfs/article-pdf/33/3/1067/32449220/hhz137.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007/s10584-014-1084-5.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T03:33:04.510493+00:00"
+  },
+  {
+    "id": "run_200",
+    "created_at": "2026-03-31T03:33:02.731046+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007%2Fs40593-016-0110-3.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T03:33:02.727950+00:00"
+  },
+  {
+    "id": "run_199",
+    "created_at": "2026-03-31T01:50:41.937002+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://quantum-journal.org/papers/q-2018-08-06-79/pdf/",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/9171629/9316332/09318753.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T01:50:41.933042+00:00"
+  },
+  {
+    "id": "run_198",
+    "created_at": "2026-03-31T01:50:40.052673+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://academic.oup.com/rfs/article-pdf/33/3/1067/32449220/hhz137.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007/s10584-014-1084-5.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T01:50:40.051553+00:00"
+  },
+  {
+    "id": "run_197",
+    "created_at": "2026-03-31T01:50:37.645465+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007%2Fs40593-016-0110-3.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T01:50:37.639093+00:00"
+  },
+  {
+    "id": "run_196",
+    "created_at": "2026-03-31T01:21:50.880596+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "drug discovery",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T01:21:50.876649+00:00"
+  },
+  {
+    "id": "run_195",
+    "created_at": "2026-03-31T01:21:49.683879+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "genome sequencing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T01:21:49.679745+00:00"
+  },
+  {
+    "id": "run_194",
+    "created_at": "2026-03-31T01:21:48.423236+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "cancer biomarkers",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T01:21:48.419967+00:00"
+  },
+  {
+    "id": "run_193",
+    "created_at": "2026-03-31T01:21:47.266833+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.7554/elife.34408",
+      "page 2: URL host is not in the open-access allowlist: https://academic.oup.com/ije/article-pdf/45/6/1787/32531173/dyw114.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T01:21:47.263318+00:00"
+  },
+  {
+    "id": "run_192",
+    "created_at": "2026-03-31T01:21:13.898736+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://drops.dagstuhl.de/storage/00lipics/lipics-vol301-sea2024/LIPIcs.SEA.2024.20/LIPIcs.SEA.2024.20.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/6287639/9312710/09439502.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T01:21:13.895155+00:00"
+  },
+  {
+    "id": "run_191",
+    "created_at": "2026-03-31T00:17:24.297716+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://quantum-journal.org/papers/q-2018-08-06-79/pdf/",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/9171629/9316332/09318753.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T00:17:24.294293+00:00"
+  },
+  {
+    "id": "run_190",
+    "created_at": "2026-03-31T00:17:19.305226+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://academic.oup.com/rfs/article-pdf/33/3/1067/32449220/hhz137.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007/s10584-014-1084-5.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T00:17:19.302387+00:00"
+  },
+  {
+    "id": "run_189",
+    "created_at": "2026-03-31T00:17:14.702224+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007%2Fs40593-016-0110-3.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-31T00:17:14.697422+00:00"
+  },
+  {
+    "id": "run_188",
+    "created_at": "2026-03-30T23:17:39.920888+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "drug discovery",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T23:17:39.916620+00:00"
+  },
+  {
+    "id": "run_187",
+    "created_at": "2026-03-30T23:17:38.741147+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "genome sequencing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T23:17:38.736073+00:00"
+  },
+  {
+    "id": "run_186",
+    "created_at": "2026-03-30T23:17:37.529784+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "cancer biomarkers",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T23:17:37.523710+00:00"
+  },
+  {
+    "id": "run_185",
+    "created_at": "2026-03-30T22:47:06.176036+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T22:47:06.171668+00:00"
+  },
+  {
+    "id": "run_184",
+    "created_at": "2026-03-30T22:47:05.872440+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T22:47:05.870654+00:00"
+  },
+  {
+    "id": "run_183",
+    "created_at": "2026-03-30T22:47:05.445091+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T22:47:05.434482+00:00"
+  },
+  {
+    "id": "run_182",
+    "created_at": "2026-03-30T21:15:15.354673+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "completed",
+    "record_count": 1,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "harvard_librarycloud"
+      ],
+      "source_keys": [
+        "harvard_librarycloud:aed82cf7af0fdd37002fb82d"
+      ]
+    },
+    "completed_at": "2026-03-30T21:15:15.354100+00:00"
+  },
+  {
+    "id": "run_181",
+    "created_at": "2026-03-30T21:15:14.042340+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "completed",
+    "record_count": 3,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "harvard_librarycloud"
+      ],
+      "source_keys": [
+        "harvard_librarycloud:27b77878b9ad8d331589527a",
+        "harvard_librarycloud:95a558188c6d9d63a759932e",
+        "harvard_librarycloud:485ef0602753c29c302740bf"
+      ]
+    },
+    "completed_at": "2026-03-30T21:15:14.040153+00:00"
+  },
+  {
+    "id": "run_180",
+    "created_at": "2026-03-30T21:15:12.459682+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "urban studies",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: http://www.sciencedirect.com/science/article/pii/S0160412019337286",
+      "page 2: URL host is not in the open-access allowlist: https://ges.rgo.ru/jour/article/view/3197"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:15:12.458001+00:00"
+  },
+  {
+    "id": "run_179",
+    "created_at": "2026-03-30T21:15:11.817029+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "education policy",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: http://www.sciencedirect.com/science/article/pii/S2666558123000349",
+      "page 2: URL host is not in the open-access allowlist: https://www.ajol.info/index.php/sajee/article/view/272736"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:15:11.816489+00:00"
+  },
+  {
+    "id": "run_178",
+    "created_at": "2026-03-30T21:15:11.196417+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "digital humanities",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://oajournals.fupress.net/index.php/bsfm-lea/article/view/7765",
+      "page 2: URL host is not in the open-access allowlist: https://www.frontiersin.org/articles/10.3389/fpsyg.2021.718700/full"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:15:11.192509+00:00"
+  },
+  {
+    "id": "run_177",
+    "created_at": "2026-03-30T21:15:10.592633+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "drug discovery",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:15:10.591148+00:00"
+  },
+  {
+    "id": "run_176",
+    "created_at": "2026-03-30T21:15:09.404573+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "genome sequencing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:15:09.403131+00:00"
+  },
+  {
+    "id": "run_175",
+    "created_at": "2026-03-30T21:15:08.077001+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "cancer biomarkers",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:15:08.074801+00:00"
+  },
+  {
+    "id": "run_174",
+    "created_at": "2026-03-30T21:15:06.730073+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:15:06.728280+00:00"
+  },
+  {
+    "id": "run_173",
+    "created_at": "2026-03-30T21:15:03.761547+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:15:03.757593+00:00"
+  },
+  {
+    "id": "run_172",
+    "created_at": "2026-03-30T21:15:00.692987+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:15:00.691081+00:00"
+  },
+  {
+    "id": "run_171",
+    "created_at": "2026-03-30T21:15:00.439349+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:15:00.437631+00:00"
+  },
+  {
+    "id": "run_170",
+    "created_at": "2026-03-30T21:15:00.171880+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:15:00.169083+00:00"
+  },
+  {
+    "id": "run_169",
+    "created_at": "2026-03-30T21:14:59.937225+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.1186/s12911-024-02827-2",
+      "page 2: URL host is not in the open-access allowlist: https://renhyd.org/index.php/renhyd/article/view/13"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:14:59.935178+00:00"
+  },
+  {
+    "id": "run_168",
+    "created_at": "2026-03-30T21:14:53.392856+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.1038/s41598-026-36031-1",
+      "page 2: URL host is not in the open-access allowlist: https://blockchainhealthcaretoday.com/index.php/journal/article/view/436/921"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:14:53.389611+00:00"
+  },
+  {
+    "id": "run_167",
+    "created_at": "2026-03-30T21:14:10.128976+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.1038/s41598-026-36031-1",
+      "page 2: URL host is not in the open-access allowlist: https://blockchainhealthcaretoday.com/index.php/journal/article/view/436/921"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:14:10.125309+00:00"
+  },
+  {
+    "id": "run_166",
+    "created_at": "2026-03-30T21:13:12.297246+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:13:12.295634+00:00"
+  },
+  {
+    "id": "run_165",
+    "created_at": "2026-03-30T21:13:09.282208+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:13:09.280461+00:00"
+  },
+  {
+    "id": "run_164",
+    "created_at": "2026-03-30T21:13:09.000691+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:13:08.999228+00:00"
+  },
+  {
+    "id": "run_163",
+    "created_at": "2026-03-30T21:13:08.733139+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:13:08.730842+00:00"
+  },
+  {
+    "id": "run_162",
+    "created_at": "2026-03-30T21:13:08.446529+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.1186/s12911-024-02827-2",
+      "page 2: URL host is not in the open-access allowlist: https://renhyd.org/index.php/renhyd/article/view/13"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:13:08.443189+00:00"
+  },
+  {
+    "id": "run_161",
+    "created_at": "2026-03-30T21:13:01.520293+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.1038/s41598-026-36031-1",
+      "page 2: URL host is not in the open-access allowlist: https://blockchainhealthcaretoday.com/index.php/journal/article/view/436/921"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:13:01.516455+00:00"
+  },
+  {
+    "id": "run_160",
+    "created_at": "2026-03-30T21:09:10.021996+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "completed",
+    "record_count": 1,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "harvard_librarycloud"
+      ],
+      "source_keys": [
+        "harvard_librarycloud:aed82cf7af0fdd37002fb82d"
+      ]
+    },
+    "completed_at": "2026-03-30T21:09:10.020332+00:00"
+  },
+  {
+    "id": "run_159",
+    "created_at": "2026-03-30T21:09:08.709351+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "completed",
+    "record_count": 3,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "harvard_librarycloud"
+      ],
+      "source_keys": [
+        "harvard_librarycloud:27b77878b9ad8d331589527a",
+        "harvard_librarycloud:95a558188c6d9d63a759932e",
+        "harvard_librarycloud:485ef0602753c29c302740bf"
+      ]
+    },
+    "completed_at": "2026-03-30T21:09:08.707479+00:00"
+  },
+  {
+    "id": "run_158",
+    "created_at": "2026-03-30T21:09:06.854833+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "urban studies",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: http://www.sciencedirect.com/science/article/pii/S0160412019337286",
+      "page 2: URL host is not in the open-access allowlist: https://ges.rgo.ru/jour/article/view/3197"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:09:06.852793+00:00"
+  },
+  {
+    "id": "run_157",
+    "created_at": "2026-03-30T21:09:05.978649+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "education policy",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: http://www.sciencedirect.com/science/article/pii/S2666558123000349",
+      "page 2: URL host is not in the open-access allowlist: https://www.ajol.info/index.php/sajee/article/view/272736"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:09:05.977134+00:00"
+  },
+  {
+    "id": "run_156",
+    "created_at": "2026-03-30T21:09:05.139651+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "digital humanities",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://oajournals.fupress.net/index.php/bsfm-lea/article/view/7765",
+      "page 2: URL host is not in the open-access allowlist: https://www.frontiersin.org/articles/10.3389/fpsyg.2021.718700/full"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:09:05.138139+00:00"
+  },
+  {
+    "id": "run_155",
+    "created_at": "2026-03-30T21:09:04.316504+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "drug discovery",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:09:04.313578+00:00"
+  },
+  {
+    "id": "run_154",
+    "created_at": "2026-03-30T21:09:02.635402+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "genome sequencing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:09:02.632241+00:00"
+  },
+  {
+    "id": "run_153",
+    "created_at": "2026-03-30T21:09:01.334347+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "cancer biomarkers",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:09:01.331219+00:00"
+  },
+  {
+    "id": "run_152",
+    "created_at": "2026-03-30T21:09:00.160373+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:09:00.158692+00:00"
+  },
+  {
+    "id": "run_151",
+    "created_at": "2026-03-30T21:08:56.946061+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:08:56.944623+00:00"
+  },
+  {
+    "id": "run_150",
+    "created_at": "2026-03-30T21:08:53.772546+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:08:53.770284+00:00"
+  },
+  {
+    "id": "run_149",
+    "created_at": "2026-03-30T21:08:53.504712+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:08:53.503119+00:00"
+  },
+  {
+    "id": "run_148",
+    "created_at": "2026-03-30T21:08:53.237870+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:08:53.236406+00:00"
+  },
+  {
+    "id": "run_147",
+    "created_at": "2026-03-30T21:08:53.001575+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.1186/s12911-024-02827-2",
+      "page 2: URL host is not in the open-access allowlist: https://renhyd.org/index.php/renhyd/article/view/13"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:08:53.000370+00:00"
+  },
+  {
+    "id": "run_146",
+    "created_at": "2026-03-30T21:08:46.297307+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.1038/s41598-026-36031-1",
+      "page 2: URL host is not in the open-access allowlist: https://blockchainhealthcaretoday.com/index.php/journal/article/view/436/921"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:08:46.294349+00:00"
+  },
+  {
+    "id": "run_145",
+    "created_at": "2026-03-30T21:06:57.347558+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:06:57.344792+00:00"
+  },
+  {
+    "id": "run_144",
+    "created_at": "2026-03-30T21:06:57.080279+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:06:57.076643+00:00"
+  },
+  {
+    "id": "run_143",
+    "created_at": "2026-03-30T21:06:56.815128+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:06:56.813277+00:00"
+  },
+  {
+    "id": "run_142",
+    "created_at": "2026-03-30T21:06:56.572116+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.1186/s12911-024-02827-2",
+      "page 2: URL host is not in the open-access allowlist: https://renhyd.org/index.php/renhyd/article/view/13"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:06:56.570413+00:00"
+  },
+  {
+    "id": "run_141",
+    "created_at": "2026-03-30T21:06:49.905518+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.1038/s41598-026-36031-1",
+      "page 2: URL host is not in the open-access allowlist: https://blockchainhealthcaretoday.com/index.php/journal/article/view/436/921"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:06:49.900666+00:00"
+  },
+  {
+    "id": "run_140",
+    "created_at": "2026-03-30T21:06:11.151889+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.1038/s41598-026-36031-1",
+      "page 2: URL host is not in the open-access allowlist: https://blockchainhealthcaretoday.com/index.php/journal/article/view/436/921"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T21:06:11.148462+00:00"
+  },
+  {
+    "id": "run_139",
+    "created_at": "2026-03-30T19:49:19.186416+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "completed",
+    "record_count": 1,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "harvard_librarycloud"
+      ],
+      "source_keys": [
+        "harvard_librarycloud:aed82cf7af0fdd37002fb82d"
+      ]
+    },
+    "completed_at": "2026-03-30T19:49:19.185909+00:00"
+  },
+  {
+    "id": "run_138",
+    "created_at": "2026-03-30T19:49:17.917956+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "completed",
+    "record_count": 3,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "harvard_librarycloud"
+      ],
+      "source_keys": [
+        "harvard_librarycloud:27b77878b9ad8d331589527a",
+        "harvard_librarycloud:95a558188c6d9d63a759932e",
+        "harvard_librarycloud:485ef0602753c29c302740bf"
+      ]
+    },
+    "completed_at": "2026-03-30T19:49:17.917593+00:00"
+  },
+  {
+    "id": "run_137",
+    "created_at": "2026-03-30T19:49:16.477766+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "urban studies",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: http://www.sciencedirect.com/science/article/pii/S0160412019337286",
+      "page 2: URL host is not in the open-access allowlist: https://ges.rgo.ru/jour/article/view/3197"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:49:16.476135+00:00"
+  },
+  {
+    "id": "run_136",
+    "created_at": "2026-03-30T19:49:15.916161+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "education policy",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: http://www.sciencedirect.com/science/article/pii/S2666558123000349",
+      "page 2: URL host is not in the open-access allowlist: https://www.ajol.info/index.php/sajee/article/view/272736"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:49:15.915138+00:00"
+  },
+  {
+    "id": "run_135",
+    "created_at": "2026-03-30T19:49:15.295968+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "digital humanities",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://oajournals.fupress.net/index.php/bsfm-lea/article/view/7765",
+      "page 2: URL host is not in the open-access allowlist: https://www.frontiersin.org/articles/10.3389/fpsyg.2021.718700/full"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:49:15.294586+00:00"
+  },
+  {
+    "id": "run_134",
+    "created_at": "2026-03-30T19:49:14.739181+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "drug discovery",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:49:14.736892+00:00"
+  },
+  {
+    "id": "run_133",
+    "created_at": "2026-03-30T19:49:13.482996+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "genome sequencing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:49:13.480799+00:00"
+  },
+  {
+    "id": "run_132",
+    "created_at": "2026-03-30T19:49:12.293956+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "cancer biomarkers",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:49:12.292193+00:00"
+  },
+  {
+    "id": "run_131",
+    "created_at": "2026-03-30T19:49:11.146428+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:49:11.144201+00:00"
+  },
+  {
+    "id": "run_130",
+    "created_at": "2026-03-30T19:49:08.100570+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:49:08.099303+00:00"
+  },
+  {
+    "id": "run_129",
+    "created_at": "2026-03-30T19:49:04.669646+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:49:04.667089+00:00"
+  },
+  {
+    "id": "run_128",
+    "created_at": "2026-03-30T19:49:04.354831+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:49:04.353151+00:00"
+  },
+  {
+    "id": "run_127",
+    "created_at": "2026-03-30T19:49:04.082341+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:49:04.081218+00:00"
+  },
+  {
+    "id": "run_126",
+    "created_at": "2026-03-30T19:49:03.786117+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.1186/s12911-024-02827-2",
+      "page 2: URL host is not in the open-access allowlist: https://renhyd.org/index.php/renhyd/article/view/13"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:49:03.785047+00:00"
+  },
+  {
+    "id": "run_125",
+    "created_at": "2026-03-30T19:48:55.789925+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.1038/s41598-026-36031-1",
+      "page 2: URL host is not in the open-access allowlist: https://blockchainhealthcaretoday.com/index.php/journal/article/view/436/921"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:48:55.788133+00:00"
+  },
+  {
+    "id": "run_124",
+    "created_at": "2026-03-30T19:48:21.541688+00:00",
+    "requested_by_clerk_user_id": "admin_user_1",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:48:21.541419+00:00"
+  },
+  {
+    "id": "run_123",
+    "created_at": "2026-03-30T19:48:21.539021+00:00",
+    "requested_by_clerk_user_id": "admin_user_1",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:48:21.538696+00:00"
+  },
+  {
+    "id": "run_122",
+    "created_at": "2026-03-30T19:48:21.535200+00:00",
+    "requested_by_clerk_user_id": "admin_user_1",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:48:21.534343+00:00"
+  },
+  {
+    "id": "run_121",
+    "created_at": "2026-03-30T19:45:18.084202+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "completed",
+    "record_count": 1,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "harvard_librarycloud"
+      ],
+      "source_keys": [
+        "harvard_librarycloud:aed82cf7af0fdd37002fb82d"
+      ]
+    },
+    "completed_at": "2026-03-30T19:45:18.083151+00:00"
+  },
+  {
+    "id": "run_120",
+    "created_at": "2026-03-30T19:45:16.700145+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "completed",
+    "record_count": 3,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "harvard_librarycloud"
+      ],
+      "source_keys": [
+        "harvard_librarycloud:27b77878b9ad8d331589527a",
+        "harvard_librarycloud:95a558188c6d9d63a759932e",
+        "harvard_librarycloud:485ef0602753c29c302740bf"
+      ]
+    },
+    "completed_at": "2026-03-30T19:45:16.698995+00:00"
+  },
+  {
+    "id": "run_119",
+    "created_at": "2026-03-30T19:45:15.032120+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "urban studies",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: http://www.sciencedirect.com/science/article/pii/S0160412019337286",
+      "page 2: URL host is not in the open-access allowlist: https://ges.rgo.ru/jour/article/view/3197"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:45:15.031758+00:00"
+  },
+  {
+    "id": "run_118",
+    "created_at": "2026-03-30T19:45:14.446133+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "education policy",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: http://www.sciencedirect.com/science/article/pii/S2666558123000349",
+      "page 2: URL host is not in the open-access allowlist: https://www.ajol.info/index.php/sajee/article/view/272736"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:45:14.444909+00:00"
+  },
+  {
+    "id": "run_117",
+    "created_at": "2026-03-30T19:45:13.794154+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "digital humanities",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://oajournals.fupress.net/index.php/bsfm-lea/article/view/7765",
+      "page 2: URL host is not in the open-access allowlist: https://www.frontiersin.org/articles/10.3389/fpsyg.2021.718700/full"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:45:13.792701+00:00"
+  },
+  {
+    "id": "run_116",
+    "created_at": "2026-03-30T19:45:13.211811+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "drug discovery",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:45:13.210584+00:00"
+  },
+  {
+    "id": "run_115",
+    "created_at": "2026-03-30T19:45:12.019206+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "genome sequencing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:45:12.018178+00:00"
+  },
+  {
+    "id": "run_114",
+    "created_at": "2026-03-30T19:45:10.760739+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "cancer biomarkers",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:45:10.757874+00:00"
+  },
+  {
+    "id": "run_113",
+    "created_at": "2026-03-30T19:45:09.536246+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:45:09.535195+00:00"
+  },
+  {
+    "id": "run_112",
+    "created_at": "2026-03-30T19:45:06.261516+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:45:06.259437+00:00"
+  },
+  {
+    "id": "run_111",
+    "created_at": "2026-03-30T19:45:02.433010+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:45:02.432005+00:00"
+  },
+  {
+    "id": "run_110",
+    "created_at": "2026-03-30T19:45:02.214756+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:45:02.212878+00:00"
+  },
+  {
+    "id": "run_109",
+    "created_at": "2026-03-30T19:45:01.918662+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:45:01.917116+00:00"
+  },
+  {
+    "id": "run_108",
+    "created_at": "2026-03-30T19:45:01.646632+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.1186/s12911-024-02827-2",
+      "page 2: URL host is not in the open-access allowlist: https://renhyd.org/index.php/renhyd/article/view/13"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:45:01.644893+00:00"
+  },
+  {
+    "id": "run_107",
+    "created_at": "2026-03-30T19:44:53.903136+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.1038/s41598-026-36031-1",
+      "page 2: URL host is not in the open-access allowlist: https://blockchainhealthcaretoday.com/index.php/journal/article/view/436/921"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:44:53.901331+00:00"
+  },
+  {
+    "id": "run_106",
+    "created_at": "2026-03-30T19:44:08.808576+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "completed",
+    "record_count": 1,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "harvard_librarycloud"
+      ],
+      "source_keys": [
+        "harvard_librarycloud:aed82cf7af0fdd37002fb82d"
+      ]
+    },
+    "completed_at": "2026-03-30T19:44:08.806787+00:00"
+  },
+  {
+    "id": "run_105",
+    "created_at": "2026-03-30T19:44:07.620474+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "completed",
+    "record_count": 3,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "harvard_librarycloud"
+      ],
+      "source_keys": [
+        "harvard_librarycloud:27b77878b9ad8d331589527a",
+        "harvard_librarycloud:95a558188c6d9d63a759932e",
+        "harvard_librarycloud:485ef0602753c29c302740bf"
+      ]
+    },
+    "completed_at": "2026-03-30T19:44:07.612146+00:00"
+  },
+  {
+    "id": "run_104",
+    "created_at": "2026-03-30T19:44:06.213889+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "urban studies",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: http://www.sciencedirect.com/science/article/pii/S0160412019337286",
+      "page 2: URL host is not in the open-access allowlist: https://ges.rgo.ru/jour/article/view/3197"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:44:06.213008+00:00"
+  },
+  {
+    "id": "run_103",
+    "created_at": "2026-03-30T19:44:05.315614+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "education policy",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: http://www.sciencedirect.com/science/article/pii/S2666558123000349",
+      "page 2: URL host is not in the open-access allowlist: https://www.ajol.info/index.php/sajee/article/view/272736"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:44:05.313744+00:00"
+  },
+  {
+    "id": "run_102",
+    "created_at": "2026-03-30T19:44:04.577924+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "digital humanities",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://oajournals.fupress.net/index.php/bsfm-lea/article/view/7765",
+      "page 2: URL host is not in the open-access allowlist: https://www.frontiersin.org/articles/10.3389/fpsyg.2021.718700/full"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:44:04.576434+00:00"
+  },
+  {
+    "id": "run_101",
+    "created_at": "2026-03-30T19:44:03.991026+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "drug discovery",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:44:03.989738+00:00"
+  },
+  {
+    "id": "run_100",
+    "created_at": "2026-03-30T19:44:02.778293+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "genome sequencing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:44:02.776910+00:00"
+  },
+  {
+    "id": "run_99",
+    "created_at": "2026-03-30T19:44:01.616337+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "cancer biomarkers",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:44:01.614919+00:00"
+  },
+  {
+    "id": "run_98",
+    "created_at": "2026-03-30T19:44:00.445611+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:44:00.442060+00:00"
+  },
+  {
+    "id": "run_97",
+    "created_at": "2026-03-30T19:43:57.362928+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:43:57.361973+00:00"
+  },
+  {
+    "id": "run_96",
+    "created_at": "2026-03-30T19:43:54.476080+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:43:54.474744+00:00"
+  },
+  {
+    "id": "run_95",
+    "created_at": "2026-03-30T19:43:54.217521+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:43:54.215016+00:00"
+  },
+  {
+    "id": "run_94",
+    "created_at": "2026-03-30T19:43:53.984830+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:43:53.982913+00:00"
+  },
+  {
+    "id": "run_93",
+    "created_at": "2026-03-30T19:43:53.738922+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.1186/s12911-024-02827-2",
+      "page 2: URL host is not in the open-access allowlist: https://renhyd.org/index.php/renhyd/article/view/13"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:43:53.737326+00:00"
+  },
+  {
+    "id": "run_92",
+    "created_at": "2026-03-30T19:43:47.508425+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.1038/s41598-026-36031-1",
+      "page 2: URL host is not in the open-access allowlist: https://blockchainhealthcaretoday.com/index.php/journal/article/view/436/921"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:43:47.506069+00:00"
+  },
+  {
+    "id": "run_91",
+    "created_at": "2026-03-30T19:42:58.095668+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.1038/s41598-026-36031-1",
+      "page 2: URL host is not in the open-access allowlist: https://blockchainhealthcaretoday.com/index.php/journal/article/view/436/921"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:42:58.092990+00:00"
+  },
+  {
+    "id": "run_90",
+    "created_at": "2026-03-30T19:25:07.634778+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "completed",
+    "record_count": 1,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "harvard_librarycloud"
+      ],
+      "source_keys": [
+        "harvard_librarycloud:aed82cf7af0fdd37002fb82d"
+      ]
+    },
+    "completed_at": "2026-03-30T19:25:07.633545+00:00"
+  },
+  {
+    "id": "run_89",
+    "created_at": "2026-03-30T19:25:05.750242+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "completed",
+    "record_count": 3,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "harvard_librarycloud"
+      ],
+      "source_keys": [
+        "harvard_librarycloud:27b77878b9ad8d331589527a",
+        "harvard_librarycloud:95a558188c6d9d63a759932e",
+        "harvard_librarycloud:485ef0602753c29c302740bf"
+      ]
+    },
+    "completed_at": "2026-03-30T19:25:05.749211+00:00"
+  },
+  {
+    "id": "run_88",
+    "created_at": "2026-03-30T19:25:03.662586+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "urban studies",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: http://www.sciencedirect.com/science/article/pii/S0160412019337286",
+      "page 2: URL host is not in the open-access allowlist: https://ges.rgo.ru/jour/article/view/3197"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:25:03.658481+00:00"
+  },
+  {
+    "id": "run_87",
+    "created_at": "2026-03-30T19:25:03.043838+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "education policy",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: http://www.sciencedirect.com/science/article/pii/S2666558123000349",
+      "page 2: URL host is not in the open-access allowlist: https://www.ajol.info/index.php/sajee/article/view/272736"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:25:03.042798+00:00"
+  },
+  {
+    "id": "run_86",
+    "created_at": "2026-03-30T19:25:02.034346+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "digital humanities",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://oajournals.fupress.net/index.php/bsfm-lea/article/view/7765",
+      "page 2: URL host is not in the open-access allowlist: https://www.frontiersin.org/articles/10.3389/fpsyg.2021.718700/full"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:25:02.032825+00:00"
+  },
+  {
+    "id": "run_85",
+    "created_at": "2026-03-30T19:25:01.384258+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "drug discovery",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:25:01.383253+00:00"
+  },
+  {
+    "id": "run_84",
+    "created_at": "2026-03-30T19:25:00.219145+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "genome sequencing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:25:00.218259+00:00"
+  },
+  {
+    "id": "run_83",
+    "created_at": "2026-03-30T19:24:59.068213+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "cancer biomarkers",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:24:59.067263+00:00"
+  },
+  {
+    "id": "run_82",
+    "created_at": "2026-03-30T19:24:57.883116+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:24:57.878932+00:00"
+  },
+  {
+    "id": "run_81",
+    "created_at": "2026-03-30T19:24:54.925831+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://www.nature.com/articles/s41467-022-29939-5.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://www.biorxiv.org/content/biorxiv/early/2023/05/16/2023.05.16.541002.full.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:24:54.923161+00:00"
+  },
+  {
+    "id": "run_80",
+    "created_at": "2026-03-30T19:24:37.900897+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://quantum-journal.org/papers/q-2018-08-06-79/pdf/",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/9171629/9316332/09318753.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:24:37.900369+00:00"
+  },
+  {
+    "id": "run_79",
+    "created_at": "2026-03-30T19:24:36.297245+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://academic.oup.com/rfs/article-pdf/33/3/1067/32449220/hhz137.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007/s10584-014-1084-5.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:24:36.296798+00:00"
+  },
+  {
+    "id": "run_78",
+    "created_at": "2026-03-30T19:24:34.602276+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007%2Fs40593-016-0110-3.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:24:34.599560+00:00"
+  },
+  {
+    "id": "run_77",
+    "created_at": "2026-03-30T19:24:33.118852+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.7554/elife.34408",
+      "page 2: URL host is not in the open-access allowlist: https://academic.oup.com/ije/article-pdf/45/6/1787/32531173/dyw114.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:24:33.116399+00:00"
+  },
+  {
+    "id": "run_76",
+    "created_at": "2026-03-30T19:24:00.947499+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://drops.dagstuhl.de/storage/00lipics/lipics-vol301-sea2024/LIPIcs.SEA.2024.20/LIPIcs.SEA.2024.20.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/6287639/9312710/09439502.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:24:00.944913+00:00"
+  },
+  {
+    "id": "run_75",
+    "created_at": "2026-03-30T19:21:53.126650+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://quantum-journal.org/papers/q-2018-08-06-79/pdf/",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/9171629/9316332/09318753.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:21:53.123608+00:00"
+  },
+  {
+    "id": "run_74",
+    "created_at": "2026-03-30T19:21:51.330575+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://academic.oup.com/rfs/article-pdf/33/3/1067/32449220/hhz137.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007/s10584-014-1084-5.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:21:51.329800+00:00"
+  },
+  {
+    "id": "run_73",
+    "created_at": "2026-03-30T19:21:49.772912+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007%2Fs40593-016-0110-3.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:21:49.772126+00:00"
+  },
+  {
+    "id": "run_72",
+    "created_at": "2026-03-30T19:21:48.187945+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.7554/elife.34408",
+      "page 2: URL host is not in the open-access allowlist: https://academic.oup.com/ije/article-pdf/45/6/1787/32531173/dyw114.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:21:48.185548+00:00"
+  },
+  {
+    "id": "run_71",
+    "created_at": "2026-03-30T19:21:16.268499+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://drops.dagstuhl.de/storage/00lipics/lipics-vol301-sea2024/LIPIcs.SEA.2024.20/LIPIcs.SEA.2024.20.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/6287639/9312710/09439502.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:21:16.265697+00:00"
+  },
+  {
+    "id": "run_70",
+    "created_at": "2026-03-30T19:18:31.138179+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "completed",
+    "record_count": 1,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "harvard_librarycloud"
+      ],
+      "source_keys": [
+        "harvard_librarycloud:aed82cf7af0fdd37002fb82d"
+      ]
+    },
+    "completed_at": "2026-03-30T19:18:31.136962+00:00"
+  },
+  {
+    "id": "run_69",
+    "created_at": "2026-03-30T19:18:29.951400+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "completed",
+    "record_count": 3,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "harvard_librarycloud"
+      ],
+      "source_keys": [
+        "harvard_librarycloud:27b77878b9ad8d331589527a",
+        "harvard_librarycloud:95a558188c6d9d63a759932e",
+        "harvard_librarycloud:485ef0602753c29c302740bf"
+      ]
+    },
+    "completed_at": "2026-03-30T19:18:29.950488+00:00"
+  },
+  {
+    "id": "run_68",
+    "created_at": "2026-03-30T19:18:28.530581+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "urban studies",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: http://www.sciencedirect.com/science/article/pii/S0160412019337286",
+      "page 2: URL host is not in the open-access allowlist: https://ges.rgo.ru/jour/article/view/3197"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:18:28.529715+00:00"
+  },
+  {
+    "id": "run_67",
+    "created_at": "2026-03-30T19:18:27.820297+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "education policy",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: http://www.sciencedirect.com/science/article/pii/S2666558123000349",
+      "page 2: URL host is not in the open-access allowlist: https://www.ajol.info/index.php/sajee/article/view/272736"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:18:27.819427+00:00"
+  },
+  {
+    "id": "run_66",
+    "created_at": "2026-03-30T19:18:27.102139+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "digital humanities",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://oajournals.fupress.net/index.php/bsfm-lea/article/view/7765",
+      "page 2: URL host is not in the open-access allowlist: https://www.frontiersin.org/articles/10.3389/fpsyg.2021.718700/full"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:18:27.101257+00:00"
+  },
+  {
+    "id": "run_65",
+    "created_at": "2026-03-30T19:18:26.241332+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "drug discovery",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:18:26.240551+00:00"
+  },
+  {
+    "id": "run_64",
+    "created_at": "2026-03-30T19:18:25.060216+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "genome sequencing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:18:25.059516+00:00"
+  },
+  {
+    "id": "run_63",
+    "created_at": "2026-03-30T19:18:23.893587+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "cancer biomarkers",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:18:23.890922+00:00"
+  },
+  {
+    "id": "run_62",
+    "created_at": "2026-03-30T19:18:22.409642+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/5ABCF5B3FC3089A87FD59CECBB3465C0/S1047198700012985a.pdf/div-class-title-causal-inference-without-balance-checking-coarsened-exact-matching-div.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/joim.12577"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:18:22.408249+00:00"
+  },
+  {
+    "id": "run_61",
+    "created_at": "2026-03-30T19:17:53.411059+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://www.nature.com/articles/s41467-022-29939-5.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://www.biorxiv.org/content/biorxiv/early/2023/05/16/2023.05.16.541002.full.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:17:53.404469+00:00"
+  },
+  {
+    "id": "run_60",
+    "created_at": "2026-03-30T19:17:30.278229+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://quantum-journal.org/papers/q-2018-08-06-79/pdf/",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/9171629/9316332/09318753.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:17:30.276303+00:00"
+  },
+  {
+    "id": "run_59",
+    "created_at": "2026-03-30T19:17:28.724528+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://academic.oup.com/rfs/article-pdf/33/3/1067/32449220/hhz137.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007/s10584-014-1084-5.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:17:28.720570+00:00"
+  },
+  {
+    "id": "run_58",
+    "created_at": "2026-03-30T19:17:27.204404+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007%2Fs40593-016-0110-3.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:17:27.202049+00:00"
+  },
+  {
+    "id": "run_57",
+    "created_at": "2026-03-30T19:17:25.309828+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.7554/elife.34408",
+      "page 2: URL host is not in the open-access allowlist: https://academic.oup.com/ije/article-pdf/45/6/1787/32531173/dyw114.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:17:25.308141+00:00"
+  },
+  {
+    "id": "run_56",
+    "created_at": "2026-03-30T19:16:47.043317+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://drops.dagstuhl.de/storage/00lipics/lipics-vol301-sea2024/LIPIcs.SEA.2024.20/LIPIcs.SEA.2024.20.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/6287639/9312710/09439502.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:16:47.040289+00:00"
+  },
+  {
+    "id": "run_55",
+    "created_at": "2026-03-30T19:14:48.694232+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://quantum-journal.org/papers/q-2018-08-06-79/pdf/",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/9171629/9316332/09318753.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:14:48.693875+00:00"
+  },
+  {
+    "id": "run_54",
+    "created_at": "2026-03-30T19:14:46.950554+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://academic.oup.com/rfs/article-pdf/33/3/1067/32449220/hhz137.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007/s10584-014-1084-5.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:14:46.950241+00:00"
+  },
+  {
+    "id": "run_53",
+    "created_at": "2026-03-30T19:14:44.959194+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007%2Fs40593-016-0110-3.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:14:44.957128+00:00"
+  },
+  {
+    "id": "run_52",
+    "created_at": "2026-03-30T19:14:43.582439+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.7554/elife.34408",
+      "page 2: URL host is not in the open-access allowlist: https://academic.oup.com/ije/article-pdf/45/6/1787/32531173/dyw114.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:14:43.581341+00:00"
+  },
+  {
+    "id": "run_51",
+    "created_at": "2026-03-30T19:14:10.193766+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://drops.dagstuhl.de/storage/00lipics/lipics-vol301-sea2024/LIPIcs.SEA.2024.20/LIPIcs.SEA.2024.20.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/6287639/9312710/09439502.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:14:10.191146+00:00"
+  },
+  {
+    "id": "run_50",
+    "created_at": "2026-03-30T19:06:55.964028+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "completed",
+    "record_count": 1,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "harvard_librarycloud"
+      ],
+      "source_keys": [
+        "harvard_librarycloud:aed82cf7af0fdd37002fb82d"
+      ]
+    },
+    "completed_at": "2026-03-30T19:06:55.962721+00:00"
+  },
+  {
+    "id": "run_49",
+    "created_at": "2026-03-30T19:06:54.619402+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "completed",
+    "record_count": 3,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "harvard_librarycloud"
+      ],
+      "source_keys": [
+        "harvard_librarycloud:27b77878b9ad8d331589527a",
+        "harvard_librarycloud:95a558188c6d9d63a759932e",
+        "harvard_librarycloud:485ef0602753c29c302740bf"
+      ]
+    },
+    "completed_at": "2026-03-30T19:06:54.618840+00:00"
+  },
+  {
+    "id": "run_48",
+    "created_at": "2026-03-30T19:06:52.830914+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "urban studies",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: http://www.sciencedirect.com/science/article/pii/S0160412019337286",
+      "page 2: URL host is not in the open-access allowlist: https://ges.rgo.ru/jour/article/view/3197"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:06:52.829600+00:00"
+  },
+  {
+    "id": "run_47",
+    "created_at": "2026-03-30T19:06:51.997660+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "education policy",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: http://www.sciencedirect.com/science/article/pii/S2666558123000349",
+      "page 2: URL host is not in the open-access allowlist: https://www.ajol.info/index.php/sajee/article/view/272736"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:06:51.996599+00:00"
+  },
+  {
+    "id": "run_46",
+    "created_at": "2026-03-30T19:06:51.302778+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "digital humanities",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://oajournals.fupress.net/index.php/bsfm-lea/article/view/7765",
+      "page 2: URL host is not in the open-access allowlist: https://www.frontiersin.org/articles/10.3389/fpsyg.2021.718700/full"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:06:51.300967+00:00"
+  },
+  {
+    "id": "run_45",
+    "created_at": "2026-03-30T19:06:50.676019+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "drug discovery",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:06:50.673755+00:00"
+  },
+  {
+    "id": "run_44",
+    "created_at": "2026-03-30T19:06:49.535266+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "genome sequencing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:06:49.532672+00:00"
+  },
+  {
+    "id": "run_43",
+    "created_at": "2026-03-30T19:06:48.320201+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "cancer biomarkers",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:06:48.318464+00:00"
+  },
+  {
+    "id": "run_42",
+    "created_at": "2026-03-30T19:06:46.725547+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/5ABCF5B3FC3089A87FD59CECBB3465C0/S1047198700012985a.pdf/div-class-title-causal-inference-without-balance-checking-coarsened-exact-matching-div.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/joim.12577"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:06:46.723442+00:00"
+  },
+  {
+    "id": "run_41",
+    "created_at": "2026-03-30T19:06:20.897745+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://www.nature.com/articles/s41467-022-29939-5.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://www.biorxiv.org/content/biorxiv/early/2023/05/16/2023.05.16.541002.full.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:06:20.896956+00:00"
+  },
+  {
+    "id": "run_40",
+    "created_at": "2026-03-30T19:05:58.246121+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://quantum-journal.org/papers/q-2018-08-06-79/pdf/",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/9171629/9316332/09318753.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:05:58.244734+00:00"
+  },
+  {
+    "id": "run_39",
+    "created_at": "2026-03-30T19:05:56.931025+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://academic.oup.com/rfs/article-pdf/33/3/1067/32449220/hhz137.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007/s10584-014-1084-5.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:05:56.930331+00:00"
+  },
+  {
+    "id": "run_38",
+    "created_at": "2026-03-30T19:05:55.369796+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007%2Fs40593-016-0110-3.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:05:55.368606+00:00"
+  },
+  {
+    "id": "run_37",
+    "created_at": "2026-03-30T19:05:53.840630+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.7554/elife.34408",
+      "page 2: URL host is not in the open-access allowlist: https://academic.oup.com/ije/article-pdf/45/6/1787/32531173/dyw114.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:05:53.838809+00:00"
+  },
+  {
+    "id": "run_36",
+    "created_at": "2026-03-30T19:05:22.595009+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://drops.dagstuhl.de/storage/00lipics/lipics-vol301-sea2024/LIPIcs.SEA.2024.20/LIPIcs.SEA.2024.20.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/6287639/9312710/09439502.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:05:22.593801+00:00"
+  },
+  {
+    "id": "run_35",
+    "created_at": "2026-03-30T19:04:01.379900+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://www.nature.com/articles/s41467-022-29939-5.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://www.biorxiv.org/content/biorxiv/early/2023/05/16/2023.05.16.541002.full.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:04:01.378626+00:00"
+  },
+  {
+    "id": "run_34",
+    "created_at": "2026-03-30T19:03:37.602541+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://quantum-journal.org/papers/q-2018-08-06-79/pdf/",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/9171629/9316332/09318753.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:03:37.601982+00:00"
+  },
+  {
+    "id": "run_33",
+    "created_at": "2026-03-30T19:03:36.159874+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://academic.oup.com/rfs/article-pdf/33/3/1067/32449220/hhz137.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007/s10584-014-1084-5.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:03:36.159336+00:00"
+  },
+  {
+    "id": "run_32",
+    "created_at": "2026-03-30T19:03:34.634131+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://link.springer.com/content/pdf/10.1007%2Fs40593-016-0110-3.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:03:34.633209+00:00"
+  },
+  {
+    "id": "run_31",
+    "created_at": "2026-03-30T19:03:32.895583+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://doi.org/10.7554/elife.34408",
+      "page 2: URL host is not in the open-access allowlist: https://academic.oup.com/ije/article-pdf/45/6/1787/32531173/dyw114.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:03:32.894311+00:00"
+  },
+  {
+    "id": "run_30",
+    "created_at": "2026-03-30T19:03:00.647491+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: URL host is not in the open-access allowlist: https://drops.dagstuhl.de/storage/00lipics/lipics-vol301-sea2024/LIPIcs.SEA.2024.20/LIPIcs.SEA.2024.20.pdf",
+      "page 2: URL host is not in the open-access allowlist: https://ieeexplore.ieee.org/ielx7/6287639/9312710/09439502.pdf"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T19:03:00.645294+00:00"
+  },
+  {
+    "id": "run_29",
+    "created_at": "2026-03-30T18:54:15.673922+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "harvard_librarycloud"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:54:15.673835+00:00"
+  },
+  {
+    "id": "run_28",
+    "created_at": "2026-03-30T18:54:15.672695+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "harvard_librarycloud"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:54:15.672605+00:00"
+  },
+  {
+    "id": "run_27",
+    "created_at": "2026-03-30T18:54:15.671456+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "urban studies",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:54:15.671372+00:00"
+  },
+  {
+    "id": "run_26",
+    "created_at": "2026-03-30T18:54:15.670263+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "education policy",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:54:15.670182+00:00"
+  },
+  {
+    "id": "run_25",
+    "created_at": "2026-03-30T18:54:15.669077+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "digital humanities",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:54:15.668994+00:00"
+  },
+  {
+    "id": "run_24",
+    "created_at": "2026-03-30T18:54:15.667841+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "drug discovery",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:54:15.667758+00:00"
+  },
+  {
+    "id": "run_23",
+    "created_at": "2026-03-30T18:54:15.666591+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "genome sequencing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:54:15.666502+00:00"
+  },
+  {
+    "id": "run_22",
+    "created_at": "2026-03-30T18:54:15.665291+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "cancer biomarkers",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:54:15.665174+00:00"
+  },
+  {
+    "id": "run_21",
+    "created_at": "2026-03-30T18:54:15.663865+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:54:15.663775+00:00"
+  },
+  {
+    "id": "run_20",
+    "created_at": "2026-03-30T18:54:15.652572+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:54:15.652437+00:00"
+  },
+  {
+    "id": "run_19",
+    "created_at": "2026-03-30T18:54:15.640392+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "quantum computing",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:54:15.640184+00:00"
+  },
+  {
+    "id": "run_18",
+    "created_at": "2026-03-30T18:54:15.638482+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "climate risk",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:54:15.638340+00:00"
+  },
+  {
+    "id": "run_17",
+    "created_at": "2026-03-30T18:54:15.636241+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "artificial intelligence",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:54:15.636151+00:00"
+  },
+  {
+    "id": "run_16",
+    "created_at": "2026-03-30T18:54:15.634570+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: HTTPConnectionPool(host='export.arxiv.org', port=80): Max retries exceeded with url: /api/query?search_query=all%3Acausal+inference&start=0&max_results=25 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x123c05710>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))",
+      "page 2: HTTPConnectionPool(host='export.arxiv.org', port=80): Max retries exceeded with url: /api/query?search_query=all%3Acausal+inference&start=0&max_results=25 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x123c05190>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:54:15.634462+00:00"
+  },
+  {
+    "id": "run_15",
+    "created_at": "2026-03-30T18:54:15.632541+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: HTTPConnectionPool(host='export.arxiv.org', port=80): Max retries exceeded with url: /api/query?search_query=all%3Agraph+neural+networks&start=0&max_results=25 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fed450>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))",
+      "page 2: HTTPConnectionPool(host='export.arxiv.org', port=80): Max retries exceeded with url: /api/query?search_query=all%3Agraph+neural+networks&start=0&max_results=25 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x123c04b10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:54:15.632141+00:00"
+  },
+  {
+    "id": "run_14",
+    "created_at": "2026-03-30T18:51:56.725451+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "harvard_librarycloud"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:51:56.725386+00:00"
+  },
+  {
+    "id": "run_13",
+    "created_at": "2026-03-30T18:51:56.724316+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "harvard_librarycloud"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:51:56.724252+00:00"
+  },
+  {
+    "id": "run_12",
+    "created_at": "2026-03-30T18:51:56.723128+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:51:56.723058+00:00"
+  },
+  {
+    "id": "run_11",
+    "created_at": "2026-03-30T18:51:56.721874+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "doaj"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:51:56.721799+00:00"
+  },
+  {
+    "id": "run_10",
+    "created_at": "2026-03-30T18:51:56.720492+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:51:56.720383+00:00"
+  },
+  {
+    "id": "run_9",
+    "created_at": "2026-03-30T18:51:56.718523+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "europe_pmc"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:51:56.718434+00:00"
+  },
+  {
+    "id": "run_8",
+    "created_at": "2026-03-30T18:51:56.717049+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:51:56.716884+00:00"
+  },
+  {
+    "id": "run_7",
+    "created_at": "2026-03-30T18:51:56.705550+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_institutions"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:51:56.705413+00:00"
+  },
+  {
+    "id": "run_6",
+    "created_at": "2026-03-30T18:51:56.692411+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:51:56.692336+00:00"
+  },
+  {
+    "id": "run_5",
+    "created_at": "2026-03-30T18:51:56.690892+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 0,
+    "warnings": [],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "openalex_global"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:51:56.690813+00:00"
+  },
+  {
+    "id": "run_4",
+    "created_at": "2026-03-30T18:51:56.689297+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: HTTPConnectionPool(host='export.arxiv.org', port=80): Max retries exceeded with url: /api/query?search_query=all%3Acausal+inference&start=0&max_results=25 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x11d904c90>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))",
+      "page 2: HTTPConnectionPool(host='export.arxiv.org', port=80): Max retries exceeded with url: /api/query?search_query=all%3Acausal+inference&start=0&max_results=25 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x11d904dd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:51:56.689217+00:00"
+  },
+  {
+    "id": "run_3",
+    "created_at": "2026-03-30T18:51:56.687719+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: HTTPConnectionPool(host='export.arxiv.org', port=80): Max retries exceeded with url: /api/query?search_query=all%3Agraph+neural+networks&start=0&max_results=25 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x11d8fb950>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))",
+      "page 2: HTTPConnectionPool(host='export.arxiv.org', port=80): Max retries exceeded with url: /api/query?search_query=all%3Agraph+neural+networks&start=0&max_results=25 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x11d904590>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_targets": [
+        "arxiv"
+      ],
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:51:56.687389+00:00"
+  },
+  {
+    "id": "run_2",
+    "created_at": "2026-03-30T18:48:03.557512+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "causal inference",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: HTTPConnectionPool(host='export.arxiv.org', port=80): Max retries exceeded with url: /api/query?search_query=all%3Acausal+inference&start=0&max_results=25 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x117b94d50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))",
+      "page 2: HTTPConnectionPool(host='export.arxiv.org', port=80): Max retries exceeded with url: /api/query?search_query=all%3Acausal+inference&start=0&max_results=25 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x117b94590>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:48:03.557443+00:00"
+  },
+  {
+    "id": "run_1",
+    "created_at": "2026-03-30T18:48:03.556052+00:00",
+    "requested_by_clerk_user_id": "system_auto_indexer",
+    "connector_name": "open_access_bulk_index",
+    "query": "graph neural networks",
+    "ingestion_method": "api_batch_index",
+    "status": "failed",
+    "record_count": 0,
+    "warning_count": 2,
+    "warnings": [
+      "page 1: HTTPConnectionPool(host='export.arxiv.org', port=80): Max retries exceeded with url: /api/query?search_query=all%3Agraph+neural+networks&start=0&max_results=25 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x117b1d650>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))",
+      "page 2: HTTPConnectionPool(host='export.arxiv.org', port=80): Max retries exceeded with url: /api/query?search_query=all%3Agraph+neural+networks&start=0&max_results=25 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x117b943d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))"
+    ],
+    "metadata": {
+      "pages": 2,
+      "limit_per_source": 25,
+      "featured": false,
+      "source_keys": []
+    },
+    "completed_at": "2026-03-30T18:48:03.555952+00:00"
+  }
+]

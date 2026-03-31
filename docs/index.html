@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontier Research Intelligence Beta</title>
+  <meta name="description" content="A lightweight proof-of-concept beta for serious research discovery, paper chat, comparison, and workspace capture.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/beta.css">
+  <script>
+    window.FRIP_BETA_CONFIG = {
+      apiBaseUrl: "https://your-backend-domain.com",
+      clerkPublishableKey: "",
+      clerkJsVersion: "5.56.0",
+      supabaseUrl: "",
+      supabaseAnonKey: "",
+      betaSignalTable: "beta_interest_signals",
+      appName: "Frontier Research Intelligence Beta"
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@clerk/clerk-js@5.56.0/dist/clerk.browser.js"></script>
+  <script defer src="./assets/beta.js"></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#home">
+        <span class="brand-mark">FR</span>
+        <span>
+          <strong>Frontier Research Intelligence</strong>
+          <small>Public beta proof of concept</small>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="#explore">Explore</a>
+        <a href="#workspace">Workspace</a>
+        <a href="#beta-capture">Beta signal</a>
+      </nav>
+      <div class="topbar-actions">
+        <button id="themeToggle" class="ghost-button" type="button">Light / Dark</button>
+        <button id="openSignIn" class="ghost-button" type="button">Sign in</button>
+        <button id="openSignUp" class="primary-button" type="button">Start free beta</button>
+        <div id="clerkUserButton"></div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Research OS beta</p>
+          <h1>A lighter proof of concept with real signal capture, not fake polish.</h1>
+          <p class="lede">
+            Search the catalog, pull from arXiv and institutional sources, ask grounded questions, compare papers, save what matters,
+            and tell us whether this is useful enough to recommend to a smart friend.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-button" id="heroExplore" type="button">Explore papers</button>
+            <button class="ghost-button" id="heroAuth" type="button">Create beta account</button>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric">
+              <span>Live modes</span>
+              <strong>Catalog + arXiv + federated</strong>
+            </div>
+            <div class="metric">
+              <span>Audience</span>
+              <strong>Students, researchers, analysts</strong>
+            </div>
+            <div class="metric">
+              <span>Pricing now</span>
+              <strong>Free during beta</strong>
+            </div>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <p class="eyebrow">Beta intake</p>
+          <h2>Tell us who you are, what you study, and whether this earns a recommendation.</h2>
+          <div id="betaSummary" class="beta-summary">
+            <p>No beta profile synced yet.</p>
+          </div>
+          <div class="button-row compact">
+            <button id="syncBetaProfile" class="primary-button" type="button">Sync beta profile</button>
+            <button id="saveBetaSignal" class="ghost-button" type="button">Save recommendation signal</button>
+          </div>
+        </aside>
+      </section>
+
+      <section class="profile-grid">
+        <div class="panel">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Identity</p>
+              <h2>Beta account details</h2>
+            </div>
+            <span class="small-copy">Used for profile sync and follow-up</span>
+          </div>
+          <div class="form-grid">
+            <input id="profileUsername" class="input-field" type="text" placeholder="Username">
+            <input id="profileFullName" class="input-field" type="text" placeholder="Full name">
+            <input id="profileInstitution" class="input-field" type="text" placeholder="Institution or company">
+            <input id="profileRoleTitle" class="input-field" type="text" placeholder="Role or field">
+            <input id="profileGithub" class="input-field" type="url" placeholder="GitHub URL">
+            <input id="profileLinkedin" class="input-field" type="url" placeholder="LinkedIn URL">
+            <textarea id="profileInterests" class="textarea-field" placeholder="Research interests, comma separated"></textarea>
+            <textarea id="profileNotes" class="textarea-field" placeholder="What are you trying to accomplish with the beta?"></textarea>
+          </div>
+        </div>
+
+        <div id="beta-capture" class="panel">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Recommendation signal</p>
+              <h2>Would you tell a friend?</h2>
+            </div>
+            <span class="small-copy">This is one of the honest beta metrics.</span>
+          </div>
+          <div class="signal-grid">
+            <label class="signal-option">
+              <input type="radio" name="tell_friend" value="yes">
+              <span>
+                <strong>Yes</strong>
+                <small>Strong signal. Feels useful now.</small>
+              </span>
+            </label>
+            <label class="signal-option">
+              <input type="radio" name="tell_friend" value="maybe" checked>
+              <span>
+                <strong>Maybe</strong>
+                <small>Promising, but needs sharper edges.</small>
+              </span>
+            </label>
+            <label class="signal-option">
+              <input type="radio" name="tell_friend" value="not_yet">
+              <span>
+                <strong>Not yet</strong>
+                <small>Interesting, but not recommendation-ready.</small>
+              </span>
+            </label>
+          </div>
+          <div class="form-grid">
+            <input id="betaPrimaryUseCase" class="input-field" type="text" placeholder="Main use case: coursework, literature review, strategy, policy, etc.">
+            <textarea id="betaFeedback" class="textarea-field" placeholder="What would make this worth paying for after beta?"></textarea>
+          </div>
+        </div>
+      </section>
+
+      <section id="explore" class="panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Explore</p>
+            <h2>Search-first beta</h2>
+          </div>
+          <span class="small-copy">Lightweight UI, same serious endpoints.</span>
+        </div>
+        <div class="tab-row">
+          <button class="tab-button active" type="button" data-tab="platform">Platform</button>
+          <button class="tab-button" type="button" data-tab="arxiv">arXiv</button>
+          <button class="tab-button" type="button" data-tab="federated">Federated</button>
+        </div>
+
+        <div class="search-stack">
+          <div class="search-block" data-panel="platform">
+            <div class="search-row">
+              <input id="platformQuery" class="input-field" type="text" placeholder="Search the catalog: document intelligence, graph learning, climate risk, policy analysis">
+              <button id="searchPlatform" class="primary-button" type="button">Search catalog</button>
+            </div>
+            <div id="platformResults" class="results-grid"></div>
+          </div>
+
+          <div class="search-block is-hidden" data-panel="arxiv">
+            <div class="search-row">
+              <input id="arxivQuery" class="input-field" type="text" placeholder="Search arXiv: multimodal retrieval, protein folding, causal inference">
+              <button id="searchArxiv" class="primary-button" type="button">Search arXiv</button>
+            </div>
+            <div id="arxivResults" class="results-grid"></div>
+          </div>
+
+          <div class="search-block is-hidden" data-panel="federated">
+            <div class="search-row">
+              <input id="federatedQuery" class="input-field" type="text" placeholder="Search international and institutional sources">
+              <button id="searchFederated" class="primary-button" type="button">Search sources</button>
+            </div>
+            <div id="federatedResults" class="results-grid"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <div class="panel">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Open paper</p>
+              <h2>Read the paper fast</h2>
+            </div>
+            <span id="paperBadge" class="status-pill">No paper open</span>
+          </div>
+          <div id="paperView" class="paper-view empty">
+            <p>Open a paper to see summaries, source links, and workspace actions.</p>
+          </div>
+          <div class="button-row compact">
+            <button id="savePaper" class="ghost-button" type="button">Save</button>
+            <button id="queuePaper" class="ghost-button" type="button">Queue</button>
+            <button id="favoritePaper" class="ghost-button" type="button">Favorite</button>
+            <button id="copyApa" class="ghost-button" type="button">Copy APA</button>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Ask the paper</p>
+              <h2>Grounded Q&amp;A</h2>
+            </div>
+            <span class="small-copy">Requires a full document</span>
+          </div>
+          <textarea id="questionInput" class="textarea-field" placeholder="What does this paper actually prove, and what should I be skeptical about?"></textarea>
+          <div class="button-row compact">
+            <button id="askPaper" class="primary-button" type="button">Ask</button>
+            <button class="ghost-button explain-button" type="button" data-level="student">Explain for student</button>
+            <button class="ghost-button explain-button" type="button" data-level="researcher">Explain for researcher</button>
+          </div>
+          <div id="qaAnswer" class="answer-card">
+            <p>No question asked yet.</p>
+          </div>
+          <div id="qaEvidence" class="evidence-list"></div>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <div class="panel">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Compare</p>
+              <h2>Multi-paper compare</h2>
+            </div>
+            <button id="clearCompare" class="ghost-button" type="button">Clear</button>
+          </div>
+          <div id="compareList" class="results-grid compact-results">
+            <div class="small-copy">No papers added yet.</div>
+          </div>
+          <textarea id="compareQuestion" class="textarea-field" placeholder="Which of these papers is best for practical use and which one is the most rigorous?"></textarea>
+          <div class="button-row compact">
+            <button id="runCompare" class="primary-button" type="button">Compare papers</button>
+          </div>
+          <div id="compareOutput" class="answer-card">
+            <p>No comparison yet.</p>
+          </div>
+        </div>
+
+        <div id="workspace" class="panel">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Workspace</p>
+              <h2>Saved signal</h2>
+            </div>
+            <button id="refreshWorkspace" class="ghost-button" type="button">Refresh</button>
+          </div>
+          <div class="workspace-grid">
+            <div>
+              <h3>Saved</h3>
+              <div id="savedList" class="results-grid compact-results"></div>
+            </div>
+            <div>
+              <h3>Queue</h3>
+              <div id="queueList" class="results-grid compact-results"></div>
+            </div>
+            <div>
+              <h3>Favorites</h3>
+              <div id="favoritesList" class="results-grid compact-results"></div>
+            </div>
+            <div>
+              <h3>Uploads</h3>
+              <div id="uploadsList" class="results-grid compact-results"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Uploads</p>
+            <h2>Bring your own source</h2>
+          </div>
+          <span class="small-copy">Protected in beta, because people do weird things with upload boxes.</span>
+        </div>
+        <div class="upload-row">
+          <input id="uploadFile" class="input-field" type="file" accept=".pdf,.txt,.docx,application/pdf,text/plain,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+          <button id="uploadLocal" class="ghost-button" type="button">Upload file</button>
+        </div>
+        <div class="upload-row">
+          <input id="uploadUrl" class="input-field" type="url" placeholder="Paste a public paper, report, or white paper URL">
+          <button id="uploadRemote" class="ghost-button" type="button">Ingest URL</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="authModal" class="modal-shell is-hidden" aria-hidden="true">
+    <div class="modal-card">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Account</p>
+          <h2 id="authHeading">Sign in</h2>
+        </div>
+        <button id="closeAuth" class="ghost-button" type="button">Close</button>
+      </div>
+      <p class="small-copy">Beta is free. Sign in still matters because signal without identity turns into noise.</p>
+      <div class="button-row compact">
+        <button id="showSignIn" class="ghost-button" type="button">Sign in</button>
+        <button id="showSignUp" class="primary-button" type="button">Sign up</button>
+      </div>
+      <div id="authMount" class="auth-mount"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self' https:; font-src 'self' https: data:; frame-src https:; object-src 'none'; base-uri 'self'; form-action 'self' mailto: https://checkout.stripe.com;">
+    <title>{{ page_title }} | {{ app_name }}</title>
+    <link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body data-page="{{ page_name }}">
+    <script>
+        window.__FRIP_CONFIG__ = {
+            clerkPublishableKey: {{ settings.clerk_publishable_key | tojson }},
+            supabaseUrl: {{ settings.supabase_url | tojson }},
+            supabaseAnonKey: {{ settings.supabase_anon_key | tojson }},
+            stripePublishableKey: {{ settings.stripe_publishable_key | tojson }},
+            stripePriceIds: {{ settings.stripe_price_ids | tojson }},
+            plans: {{ plans | tojson }}
+        };
+    </script>
+    <div class="site-shell">
+        <header class="topbar">
+            <a class="brand" href="/">
+                <span class="brand-mark">FR</span>
+                <span>
+                    <strong>Frontier Research</strong>
+                    <small>academic OS, lightly caffeinated</small>
+                </span>
+            </a>
+            <nav class="nav">
+                {% for item in nav_items %}
+                    <a href="{{ item.href }}" class="nav-link{% if request.url.path == item.href %} active{% endif %}">{{ item.label }}</a>
+                {% endfor %}
+            </nav>
+            <div class="topbar-actions">
+                <button class="ghost-button" type="button" id="themeToggle">Theme</button>
+                <div id="clerk-user-button" class="user-slot"></div>
+                <a href="/auth" class="primary-button">Sign In</a>
+            </div>
+        </header>
+
+        <main class="page-frame">
+            {% block content %}{% endblock %}
+        </main>
+
+        <footer class="footer">
+            <div>
+                <strong>Frontier Research Intelligence</strong>
+                <p>Research discovery, grounded AI, and commercial visibility in one stack.</p>
+            </div>
+            <div class="footer-links">
+                <a href="/docs">Docs</a>
+                <a href="/pricing">Pricing</a>
+                <a href="/careers">Careers</a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@clerk/clerk-js@{{ settings.clerk_js_version }}/dist/clerk.browser.js" async crossorigin="anonymous"{% if settings.clerk_publishable_key %} data-clerk-publishable-key="{{ settings.clerk_publishable_key }}"{% endif %}></script>
+    <script src="/static/js/app.js" defer></script>
+</body>
+</html>

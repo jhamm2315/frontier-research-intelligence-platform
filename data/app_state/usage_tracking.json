@@ -1,0 +1,28 @@
+{
+  "demo_user": {
+    "2026-03-17": {
+      "searches": 1,
+      "arxiv_ingests": 0,
+      "questions": 0,
+      "uploads": 0
+    },
+    "2026-03-23": {
+      "searches": 0,
+      "arxiv_ingests": 0,
+      "questions": 0,
+      "uploads": 1
+    },
+    "2026-03-24": {
+      "searches": 0,
+      "arxiv_ingests": 0,
+      "questions": 0,
+      "uploads": 6
+    },
+    "2026-03-25": {
+      "searches": 0,
+      "arxiv_ingests": 0,
+      "questions": 0,
+      "uploads": 2
+    }
+  }
+}
